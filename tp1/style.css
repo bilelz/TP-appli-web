@@ -2,14 +2,50 @@ body {
   background-color: #e9ebee;
   font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
   font-size: 16px;
-  margin: 0 auto;
+  margin: 20px auto;
   max-width: 800px;
 }
 
 table {
   width: 100%;
-  border: 1;
-  border-collapse: initial;
+  border: 1px solid black;
+  margin: 15px;
+  padding: 10px;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+tbody {
+  margin: 15px;
+  padding: 5px;
+}
+
+td {
+  height: 30px;
+  margin: 15px;
+  padding: 10px;
+}
+
+table.information {
+  font-size: 16px;
+}
+
+a:hover {
+  color: orange;
+}
+
+tr:nth-child(2n+1) {
+  background: seashell;
+}
+
+tr:hover {
+ background-color: deepskyblue
+}
+
+img:hover {
+  -ms-transform: scale(5.5); /* IE 9 */
+  -webkit-transform: scale(5.5); /* Safari 3-8 */
+  transform: scale(5.5);
 }
 
 .title {
@@ -19,4 +55,22 @@ table {
 .spacing {
   margin: 15px;
   width: 100%;
+}
+
+@media only screen and (max-width: 300px) {
+  body {
+      background-color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+      background-color: mediumturquoise;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+      background-color: goldenrod;
+  }
 }
