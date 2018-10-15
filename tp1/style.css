@@ -1,0 +1,22 @@
+body {
+  background-color: #e9ebee;
+  font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+table {
+  width: 100%;
+  border: 1;
+  border-collapse: initial;
+}
+
+.title {
+  text-align: center;
+}
+
+.spacing {
+  margin: 15px;
+  width: 100%;
+}
