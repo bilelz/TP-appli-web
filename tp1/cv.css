@@ -1,0 +1,79 @@
+body {
+
+    background-color: grey;
+
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+
+    font-size: 16px;
+
+    margin: 0 auto;
+
+    max-width: 800px;
+
+}
+
+ 
+
+table {
+
+background-color: white;
+
+}
+
+ 
+
+tr {
+
+    height: 35px;
+
+}
+
+ 
+
+a:hover {
+
+    color: orange;
+
+}
+
+tr:nth-child(2n+1){
+
+background-color: brown;
+
+}
+
+tr:hover{
+
+    background-color:blueviolet;
+
+}
+
+ 
+
+img:hover {
+
+transform : scale(2);
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+
+        background-color: red;
+
+    }
+
+}
+
+ 
+
+@media only screen and (max-width: 900px) {
+
+    body {
+
+        background-color: lightblue;
+
+    }
+
+}
