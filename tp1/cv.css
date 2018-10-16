@@ -1,1 +1,53 @@
+h1{
+    text-align: center;
+}
 
+table{
+    width: 100%;
+}
+
+p{
+    font-weight: bold;
+    font-size: 22;
+  
+   padding-bottom:3px
+}
+
+a:hover
+{
+    color: red;
+}
+
+table
+{
+    border: 1px skyblue;
+    width: 100%;
+    background-color: burlywood;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+        
+    }
+}
+
+img{
+ height: 35px;    
+}
+
+tbody tr:nth-child(odd)
+ {
+    color: solid black;
+    background-color: lightblue;
+}
+
+div
+{
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
