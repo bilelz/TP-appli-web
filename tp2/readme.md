@@ -37,7 +37,7 @@ Le formulaire permettra de saisir les informations suivantes :
 2. ## Formulaire HTML
     1. Dans le votre dossier “TP2”, créer un fichier index.html
     2. Écrire le code HTML pour reproduire le formulaire suivant
-        1. ![Texte alternatif](TP2table.jpg "texte pour le titre, facultatif")
+        1. <img src="TP2table.jpg" alt="texte pour le titre, facultatif"/>
         2. vous pouvez utiliser un tableau HTML pour aligner tous les éléments
         3. Documentation sur les formulaires : [http://www.w3schools.com/html/html_form_attributes.asp](http://www.w3schools.com/html/html_form_attributes.asp)
         4. Pour la date de naissance, utilisez l’attribut  ` placeholder="JJ/MM/AAAA" ` pour indiquer à l’utilisateur le format 
@@ -51,15 +51,15 @@ Le formulaire permettra de saisir les informations suivantes :
             * couleur de fond : rose
             * padding : 5px
             * bordure : 1px de couleur noire
-            * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp2/TP2table2.jpg "texte pour le titre, facultatif")   
+            * <img src="TP2table2.jpg" alt="texte pour le titre, facultatif"/>  
             
-     2. et un endroit pour écrire un **message de validation**
+     1. et un endroit pour écrire un **message de validation**
      ` <div id="resultat"> </div> `
         1. cette DIV doit avoir cette mise en forme via du CSS         
             * couleur de fond : vert
             * padding : 5px
             * couleur de texte : blanc
-            * ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp2/TP2table3.jpg "texte pour le titre, facultatif")   
+            * <img src="TP2table3.jpg" alt="texte pour le titre, facultatif"/> 
             
 4. ## Validation Javascript
     1. Créer un fichier formulaire.js

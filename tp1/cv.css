@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: grey;
 }
@@ -39,3 +40,46 @@ tr:hover{
     
 
 
+=======
+body{
+    background-color: grey;
+}
+table{
+    background-color: white;
+color: black
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color:orange;
+    
+ }
+a{
+    color: black
+} 
+
+tr:nth-child(odd){
+    background-color: blue;
+        color: white;
+    }
+    
+    img:hover{
+        transform: scale(2);}
+ td:hover{
+            background-color: yellow;
+        
+        }
+tr:hover{
+            background-color: yellow;
+        }
+        @media only screen and (max-width: 500px) {
+            table {
+                background-color: yellow;
+            }
+        }
+    
+    
+
+
+>>>>>>> 033865759f40bc7ae46ee1f208bb9d470f437ef3
