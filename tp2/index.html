@@ -8,26 +8,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <!-- Placeform> favicon.ico in the root directory -->
 
         <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
+       
         </style>
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+        <link rel="stylesheet" href="style.css">
+        <script src="formulaire.js"></script>
     </head>
-    <body>        
-        <h1>tp2</h1>
+            <h1 align="center">Saisie d'une fiche "Personne"</h1>
+
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                        <label for="Prénom">Prénom :</label>
+                        <input type="text" id="Prénom" Prénom="user_Prénom">
+                    </div>
+                    <div>
+                        <label for="Adresse">Adresse :</label>
+                        <input type="text" id="Adresse" Adresse="user_Adresse">
+                    </div>
+                        <div>
+                                <label label for="Date_de_naissance" >Date de naissance:</label>
+                                <input placeholder="JJ/MM/AAAA" id="Date_de_naissance">
+                            </div>
+                            <div>
+                    <label for="mail">mail :</label>
+                    <input type="email" id="mail" mail="user_mail">
+                </div>
+                
+            </form>
+	    
+    
+            
+            <div class="button">
+                    <button type="button" onclick="validation()">Valider</button>
+                </div>
+
+                
+                <div id="error"></div>
+                
+                <div id="resultat"> </div>
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        
+        
     </body>
 </html>
