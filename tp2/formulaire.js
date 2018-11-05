@@ -8,11 +8,11 @@ function Validation() {
     var telValue = document.querySelector("#tel").value;
 
 
-    if ((nomValue == "") && (document.querySelector("#nom").value.length <= 5)) {
+    if (nomValue == "" && document.querySelector("#nom").value.length <= 5) {
         document.querySelector("#error").textContent = "La saisi d'un nom correct est obligatoire"
         document.querySelector("#error").removeAttribute("Hidden");
-        document.querySelector("#error").textContent = "";   
-    
+        document.querySelector("#nom").textContent = "";   
+    }
 
 else if (prenomValue == "") {
             document.getElementById("error").innerHTML = "La saisie du prenom est obligatoire";
@@ -35,9 +35,10 @@ else if (prenomValue == "") {
             document.querySelector("#error").removeAttribute("Hidden");
         }
 
-    }
+    
     else {
         document.getElementById("valid").innerHTML = "Bienvenue à vous" + " " + document.querySelector("#prenom ").value + " " + document.querySelector("  #nom").value;
         document.querySelector("#valid").removeAttribute("Hidden");
+        
     }
 }
