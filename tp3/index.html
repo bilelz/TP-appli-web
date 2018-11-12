@@ -1,17 +1,28 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>TP3</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-          body{
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+
+  <!-- CSS boostrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/form-jquery-validation.js"></script>
+
+  <script src="js/popper.min.js"></script>
+
+  <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+  <script src="js/bootstrap.min.js"></script>
+  <style>
+    body{
               background-color: #e9ebee;              
               font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
               font-size: 16px;
@@ -19,15 +30,92 @@
               max-width: 800px;              
           }
         </style>
+
+  <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+  <!--<link rel="stylesheet" href="style.css">-->
+  <!--<script src="main.js"></script>-->
+</head>
+
+<body>
+  <h1>tp3</h1>
+  <!-- Add your site or application content here -->
+  <h1 align="center">Saisie d'une fiche "Personne"</h1>
+
+  <form>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Genre</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+            <label class="form-check-label" for="gridGenre1">
+              M.
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="gridRadios" id="gridGenre2" value="option2">
+            <label class="form-check-label" for="gridGenre2">
+              Mme
+            </label>
+          </div>
+
+          <div class="form-groupe">
+            <label for="Nom">Nom</label>
+            <input type="text" class="form-control" id="Nom" placeholder="Nom">
+          </div>
+          <div class="form-group">
+            <label for="Prénom">Prénom</label>
+            <input type="text" class="form-control" id="Prénom" placeholder="Prénom">
+          </div>
+          <div class="form-group">
+            <label for="Adresse">Adresse</label>
+            <input type="text" class="form-control" id="Adresse" placeholder="Adresse">
+          </div>
+          <div class="form-group">
+            <label for="Date_de_naissance">Date de naissance</label>
+            <input type="date" class="form-control" id="Date_de_naissance" placeholder="JJ/MM/AAAA">
+          </div>
+          <div class="form-group">
+            <label for="eMail">eMail</label>
+            <input type="text" class="form-control" id="eMail" placeholder="eMail">
+          </div>
+
+
+  </form>
+
+
+
+  <div class="button">
+    <button type="button" id="bouton" on click="validation()">Valider</button>
+  </div>
+
+  <div id="Formulaire">
+      <div id="invalide"></div>
+  <!-- <img src="../galilee.png" alt="Logo Galilee"/>-->
+  <div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+        <div class="modal-body">
+          <p>Corps de la modal à modifier après validation du formulaire</p>
+        </div>
+        <div class="image"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href=""></a>
+</body>
+
 </html>
