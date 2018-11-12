@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     background-color: #e9ebee;              
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -18,4 +19,26 @@ body{
     padding: 5px;
     border:1px solid black;
     color: white; 
+=======
+body{
+    background-color: #e9ebee;              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;              
+}
+
+#error{
+    display: none;
+    background-color: pink;
+    padding: 5px;
+    border:1px solid black; 
+}
+#resultat {
+    display: none;
+    background-color:green;
+    padding: 5px;
+    border:1px solid black;
+    color: white; 
+>>>>>>> e1e50630e9029c8552f94e7b24f8e8caf88ae8f1
 }
