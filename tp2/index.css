@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 h1{
     text-align: center;
 }
@@ -28,4 +29,36 @@ label{
     padding: 5px;
     background: green;
     width: 75%
+=======
+h1{
+    text-align: center;
+}
+
+form{
+    border: 1px solid blue;
+    padding: 10px;
+    background: white;
+}
+
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+
+#error{
+    border : 1px solid black;
+    color: black; 
+    padding: 5px;
+    background: red;
+    width: 75%
+}
+
+#valid{
+    border: 1px solid black;
+    color: white;
+    padding: 5px;
+    background: green;
+    width: 75%
+>>>>>>> 141ece6e6bc229f78b78f4eaf3278904d334cbec
 }

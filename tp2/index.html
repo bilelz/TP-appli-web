@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 
@@ -102,4 +103,110 @@
 
 
 
+=======
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+        body{
+              background-color: #e9ebee;              
+              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+              font-size: 16px;
+              margin: 0 auto;
+              max-width: 800px;              
+          }
+        </style>
+
+    <link rel="stylesheet" href="index.css">
+    <div>
+       
+
+
+        <script type="text/javascript" src="formulaire.js"></script>
+<body>
+
+    <h1> Saisie d'une fiche: Personne </h1>
+
+
+    <form method="post">
+       <p >
+
+       <label for = "sexe"> Civilité: </label>
+       <input type="radio" name= "sexe" value="homme"/> <label for="homme"> Homme </label>
+       <input type="radio" name= "sexe" value="femme"/> <label for="femme"> Femme </label>
+      
+    </p>
+       
+       
+        <p>
+            <label for="nom"> Votre nom: </label>
+            <input type="text" name="nom" id="nom" placeholder=" Nom" size="50" maxlength="30" required />
+
+        </p>
+
+        <p>
+            <label for="prenom"> Votre prenom: </label>
+            <input type="text" name="prenom" id="prenom" placeholder=" Prenom" size="50" maxlength="30" required />
+
+        </p>
+
+        <p>
+            <label for="dtn"> Votre date de naissance : </label>
+            <input type="date" name="dtn" id="dtn" placeholder="JJ/MM/AAAA" size="50" maxlength="10" required />
+
+        </p>
+
+        <p>
+            <label for="adresse"> Votre adresse: </label>
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse" size="50" maxlength="40" required/>
+
+        </p>
+        <p>
+            <label for="email"> Votre email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" size="50" maxlength="40" />
+
+        </p>
+
+        <p>
+            <label for="tel"> Votre téléphone: </label>
+            <input type="tel" name="tel" id="tel" placeholder="téléphone" size="50" maxlength="10" required/>
+
+        </p>
+
+<p for="button"> 
+    <input type ="button" name=button value="Valider" size="10" onclick="Validation()" />
+</p for= "button">
+
+<div id="error" hidden=""> 
+
+</div>
+
+<div id="valid" hidden=""> 
+    
+</div>
+    </form>
+
+
+
+</body>
+
+</div>
+<!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+<!--<link rel="stylesheet" href="style.css">-->
+<!--<script src="js/main.js"></script>-->
+</head>
+
+
+
+>>>>>>> 141ece6e6bc229f78b78f4eaf3278904d334cbec
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 
@@ -124,4 +125,132 @@
 
 </body>
 
+=======
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <!-- CSS boostrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <script src="js/popper.min.js"></script>
+
+    <!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+    <script src="js/bootstrap.js"></script>
+
+
+   <script src="js/form-jquery-validation.js"></script>
+    
+
+
+    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--<script src="main.js"></script>-->
+</head>
+
+<body>
+    <div class="container">
+        <h1>TP AW Formulaire v2</h1>
+        <p>Boostrap et Jquery</p>
+
+        <div class="form-group row">
+            <label for="nom" class="col-sm-2 control-label">Nom</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="name" id="nom">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="prenom" class="col-sm-2 control-label">Prenom</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="prenom" id="prenom">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="date de naissance" class="col-sm-2 control-label">Date de naissance</label>
+            <div class="col-sm-8">
+                <input type="date" class="form-control" lname="datedenaissance" id="datedenaissance">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="mail" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="adresse" class="col-sm-2 control-label">Adresse</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="adresse" id="adresse">
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-success" id="submit">Valider</button>
+
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Erreur Trouvé</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Revoyez l'un des champs de saisie de votre formulaire</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal" tabindex="-1" role="dialog" id="myModal2">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Bienvenue à vous </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body2">
+              <p id="msg"></p>     
+              <p>
+                    
+             <a class="maps" href = "http://maps.google.com/maps?q=Paris"> <img src = "maps.png" alt="Google map"> </a>
+            </p>
+            </div>
+            <div class="modal-footer">
+                <p id="msg2"> </p>
+              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+>>>>>>> 141ece6e6bc229f78b78f4eaf3278904d334cbec
 </html>
