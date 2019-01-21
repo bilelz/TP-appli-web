@@ -1,33 +1,150 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP5</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP5</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <style>
+        body{
+            max-width: 42em;
+            padding: 2em;
+            margin: 0 auto;
+            color: #161616;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            background-color: currentColor; 
+            background-image: url('Background.gif'); 
           }
+          #map{
+            border-block-end: 60px;
+            width:50px;
+            height:50px;
+         } 
+
+       
+
+
+
+
         </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>TP5</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather-icons.min.css">
+    <link rel="stylesheet" href="font/weathericons-regular-webfont.woff"> "
+    <link rel="stylesheet" href="font/weather-icons-wind.css">
+    <link rel="stylesheet" href="font/weather-icons-wind.min.css">
+
+
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
+    <script src="js/libs/vue.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--<script src="main.js"></script>-->
+</head>
+
+<body>
+    <h1><font color ="white">Météo du jour</font></h1>
+    <p><font color ="white"> WebApp Météo avec Vuejs</font></p>
+    <div id="weatherApp" class="container">
+        <!-- formulaire de saisie de ville -->
+        <form v-on:submit="addCity">
+            <div class="input-group">
+                <input type="search" class="form-control" v-model="formCityName" placeholder="Search for..." required
+                    aria-label="Search for..." autofocus required>
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Go!</button>
+                </span>
+            </div>
+
+            <!-- affichage de nombre de caractères saisie -->
+            <small class="text-muted">
+                <font color ="white">  {{formCityName.length}} car. </font>
+            </small>
+
+            <div class="alert alert-danger" role="alert" v-if='messageForm != ""'>
+                {{messageForm}}
+            </div>
+        </form>
+        <!-- fin: formulaire de saisie de ville -->
+        <h4><font color ="white">Liste des villes ({{cityList.length}})</font></h4>
+        <ul class="list-group">
+            <a v-for="city in cityList" v-on:click="meteo(city)" class="list-group-item d-flex justify-content-between align-items-center">
+                {{city.name}}
+                <button v-on:click="remove(city)" class="btn btn-secondary btn-sm" title="Supprimer de la liste">&times;</button>
+            </a>
+        </ul>
+
+        <div class="alert alert-primary" role="alert" v-if="cityList.length==0">
+            Aucune ville de saisie!
+        </div>
+
+        <!-- meteo de la ville selectionnée -->
+        <div v-if="cityWeatherLoading"> Chargement de la météo...</div>
+
+        <div v-if="cityWeather">
+
+            <div class="card" style="width: 36rem; height:25rem;" v-if="cityWeather">
+                <div class="card-header">
+                    {{cityWeather.name}}
+                </div>
+                <div id="map" style="width: 36rem; height:28rem; " v-if="cityWeather">
+
+                    <img class="card-img-top" v-bind:src="'https://maps.googleapis.com/maps/api/staticmap?markers='+cityWeather.coord.lat+','+cityWeather.coord.lon+'&zoom=10&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg'"
+                        alt="Card image cap">
+
+                </div>
+
+            <!--</div>-->
+                
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <font color ="white"><i v-bind:class="'wi wi-owm-day-'+cityWeather.weather[0].id"></i>
+                        {{cityWeather.main.temp}}<i class="wi wi-celsius"></i></font>
+                    </h5>
+                    <p class="card-text"><font color ="white">{{cityWeather.weather[0].description}}</font></p>
+                </div>
+
+           
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <i class="wi wi-cloud"></i> Nuage: {{cityWeather.clouds.all}}%
+                    </li>
+                    <li class="list-group-item">
+                        <i class="wi wi-humidity"></i> Humidité: {{cityWeather.main.humidity}}%
+                    </li>
+                    <li class="list-group-item">
+                        <i class="wi wi-windy"></i> Vent: {{cityWeather.wind.speed}} km/h
+                    </li>
+                    <li class="list-group-item">
+                        <i class="wi wi-sunrise"></i>
+                        Levé du soleil:
+                        {{new Date(cityWeather.sys.sunrise * 1000).toTimeString()}}
+                    </li>
+                    <li class="list-group-item">
+                        <i class="wi wi-sunset"></i>
+                        Couché du soleil:
+                        {{new Date(cityWeather.sys.sunset * 1000).toTimeString()}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+     
+</body>
+
 </html>
