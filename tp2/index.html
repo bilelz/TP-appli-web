@@ -1,33 +1,70 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP2</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="formulaire.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Style.css">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- Place favicon.ico in the root directory -->
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+    <style>
+        body {
+            background-color: bisque;
+            font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            font-size: 16px;
+            margin: 0 auto;
+            max-width: 800px;
+            
+        }
+    </style>
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
+    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--<script src="js/main.js"></script>-->
+</head>
+
+<body>
+    <h1>Sasie d'une fiche personne</h1>
+    
+    <table c>
+            <form action="">
+                
+          <tr>
+              <label for="Nom">Nom:</label>
+              <input type="text" name="Nom" size="60" id="Nom"> <br>
+              
+          </tr> 
+          <tr>
+              <label for="Prénom">Prénom:</label> 
+              <input type="text" name="Prénom" id="Prénom" size="60"> <br>
+            </tr> 
+            <tr>
+                <label for="date">Date de naissance:</label> 
+                <input type="date" name="Datedenaissance" size="60" id="datedenaissance"> <br>
+            </tr> 
+            <tr>
+                <label for="Adresse">Adresse:</label>
+                <input type="text" name="text" id="Adresse" size="60">
+            </tr> <br>
+            <tr>
+                <label for="Mail">Mail:</label>
+                <input type="email" name="Mail" id="Mail" size="60">
+            </tr>
+            <tr> 
+                <td><input type="button" value="valider" onclick="valide()"/></td></tr>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+       
+    </table>
+</form>
+
+        
+    <div id="resultat"></div>
+    <div id="erreur"></div> 
+</body>
+
 </html>

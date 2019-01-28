@@ -1,33 +1,104 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP3</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TP3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
-        
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
-    </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
-    </body>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="js/form-jquery-validation.js"></script>
+    <style>
+        body {
+            background-color: #e9ebee;
+            font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+            font-size: 16px;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+    </style>
+
+    <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
+    <!--<link rel="stylesheet" href="style.css">-->
+    <!--<script src="main.js"></script>-->
+</head>
+<h1>Saisie formulaire personne</h1>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <div class="form-group ">
+                    <label for="Nom">Nom</label>
+                    <input type="text" class="form-control " id="Nom" placeholder="Nom">
+                    <span class="help-block-nom  text-danger" style="display: none;">Nom doit avoir au moins 5
+                        caractères</span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Prenom">Prénom</label>
+                <input type="text" class="form-control" id="Prenom" placeholder="Prénom">
+                <span class="help-block-prenom  text-danger" style="display: none;">Prenom doit avoir au moins 5
+                    caractères</span>
+
+            </div>
+            <div class="form-group">
+                <label for="Adress">Address</label>
+                <input type="text" class="form-control" id="Adress" placeholder="1234 Main St">
+                <span class="help-block-adress  text-danger" style="display: none;">Adresse doit avoir au moins 5
+                    caractères</span>
+            </div>
+            <div class="form-group">
+                <label for="Mail">Mail</label>
+                <input type="text" class="form-control" id="Mail" placeholder="mail">
+                <span class="help-block-email text-danger" style="display: none;">Mail doit etre valide</span>
+
+            </div>
+            <div class="form-group">
+                <label for="DateDeNaissance">Date de naissance</label>
+                <input type="date" class="form-control" id="DateDeNaissance" placeholder="Date de naissance">
+            </div>
+            <button type="submit" class="btn btn-primary" id="valid">valider</button>
+        </form>
+
+
+        </table>
+        </form>
+
+
+        <div id="resultat"></div>
+        <div id="erreur"></div>
+
+
+        <div class="modal" tabindex="-1" role="dialog" id="myModal" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Bienvenue haitam</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"> </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</div>
+
+</body>
+
 </html>

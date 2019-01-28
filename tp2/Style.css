@@ -1,0 +1,49 @@
+
+
+.cont
+{
+    overflow: auto;
+    background-color: white;
+    color: black;
+    margin: 40px;
+    padding: 50px;
+}
+h1 
+{
+	text-align: center;
+	font-weight: 50px;
+}
+label
+{
+    text-align:left;
+	display: block;
+	width: 140px;
+	float: left;
+}
+#erreur{
+   
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
+    color: rgb(216, 219, 0);
+ 
+	 }
+#resultat{
+    background-color: aqua;
+    padding: 5px;
+    color: black;
+
+     
+         }
+form input
+{
+    padding:10 px;
+    font-size: 13 px;
+    width: 80%;
+
+}
+
+form{
+    background-color: violet;
+    padding: 5px;
+    
+}
