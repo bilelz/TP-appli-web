@@ -136,7 +136,7 @@ $( document ).ready(function() {
 |valeur d’un champ                | document.querySelector("#name").value;              | $("#name").val()                             |
 |Modifier de contenu HTML         | document.querySelector(".modal-body").innerHTML = '\<img src="map.jpg"/\>'   | $(".modal-body").html('\<img src="map.jpg"/\>'); | 
 |Modifier de contenu textuelle    | document.querySelector(".modal-title").textContent = "Chaine de caractère" | $(".modal-title").text("Chaine de caractère"); | 
-| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener(function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>}  |
+| ajouter un "listener" à un élément | document.querySelector("#submit").addEventListener("click", function(event){<br/> &nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>});  |  $("#submit").on("click",function(event){ <br/>&nbsp;&nbsp;event.preventDefault(); <br/>&nbsp;&nbsp;console.log( "click" ); <br/>});  |
 
 ## 5. Affichage d'une popup (modal)
 ![Texte alternatif](https://raw.githubusercontent.com/bilelz/tpaw/master/tp3/image4.png "texte pour le titre, facultatif")   

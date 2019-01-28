@@ -98,12 +98,12 @@ npm install -g @angular/cli
 
 Vérification : entrer 
 ```cmd
-ng -v
+ng version
 ```
 
 La version d'Angular CLI devrait s'afficher:
 ```cmd
-ng -v
+ng version
 
     _                      _                 ____ _     ___
    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
@@ -178,9 +178,8 @@ Dans le fichier styles.css ajouter une référence vers les CSS de bootstrap et 
 
 ```css
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~weather-icons/css/weather-icons.min.css";```
-
-
+@import "~weather-icons/css/weather-icons.min.css";
+```
 <div align="center">tp6\meteo-angular\src\styles.css</div>
 
 ## 2.3. Lancer l'application
@@ -607,7 +606,7 @@ import { MeteoItem } from '../meteoItem';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class MeteoService {
 
   constructor() { }
@@ -618,7 +617,7 @@ export class MeteoService {
 
     let m = new MeteoItem();
 
-    return fetch('https://demo.bilelz.fr/owmap/?q=' + name + '&units=metric&lang=fr&appid=VOTRE_CLE_OPENWEATHERMAP')
+    return fetch('https://api.openweathermap.org/data/2.5/weather/?q=' + name + '&units=metric&lang=fr&appid=VOTRE_CLE_OPENWEATHERMAP')
       .then(function (response) {
         return response.json();
       })
@@ -766,18 +765,20 @@ Prendre exemple sur la première date afficher dans ```meteo-detail.component.ht
 
 # 12. Build : créer un package de votre application
 
-A ce stade, l'application est en état d'être utiliser.
+A ce stade, l'application est en état d'être utilisée.
 
-Pour compiler et packager votre application, il suffit d'executer la commande : 
+Pour compiler et packager votre application pour ensuite le déployer sur votre page github, il suffit d'executer la commande : 
 
 ```cmd
-ng build
+ng build --base-href /tpaw/tp6/meteo-angular/dist/
 ```
 
-Cela va créer votre projet compilé dans le répertoire ```tp6\meteo-angular\dist```. 
+** /!\ Mettre le bon chemin de dossier du TP6 (ici "/tpaw/tp6/meteo-angular/dist/"), après le paramètre --basehref **
+
+Cela va créer votre projet compilé dans le répertoire ```tp6/meteo-angular/dist/```. 
 Ce répertoire est prêt à étre mis sur un serveur web (github pages par exemple).
 
-💡 **C'est donc ce dossier qu'il faut mettre sur votre page Github**
+💡 **C'est donc ce dossier "dist" qu'il faut mettre sur votre page Github**
 
 ```ng build``` va optimiser le code et :
 * compiler le code TypeScript en Javascript
@@ -789,7 +790,7 @@ Ce répertoire est prêt à étre mis sur un serveur web (github pages par exemp
 # 13. Meteo sur 5 jours
 
 * Ajout une méthode à ```MeteoService``` qui appellera ce web service : 
-https://demo.bilelz.fr/owmap/forecast/?q=popo&lang=fr&appid=0ada432b59deb9716c357092c5f79be6
+https://api.openweathermap.org/data/2.5/forecast/?q=popo&lang=fr&appid=0ada432b59deb9716c357092c5f79be6
 
 * Appeler cette méthode dans le code de ```meteo-detail.component.ts```
 
