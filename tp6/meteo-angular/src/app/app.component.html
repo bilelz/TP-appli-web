@@ -1,0 +1,31 @@
+<div class="container">
+
+  <!-- menu du haut de page -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">Météo avec Angular</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Accueil
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- fin : menu du haut de page -->
+
+ <!--The content below is only a placeholder and can be replaced.-->
+ <div>
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-meteo></app-meteo>
+  <router-outlet></router-outlet>
+</div>
+
+</div>
