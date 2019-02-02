@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = '⛅ Weather webapp @Master 3ir²';
+  title = '⛅ Weather webapp @Master 3ir² Sabrina HAMANI';
 }
