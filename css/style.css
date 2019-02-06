@@ -1,0 +1,111 @@
+	/*--------------------------------------
+	|	Stylesheet commune                  |
+	 --------------------------------------*/
+
+body {
+	text-align:center;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../images/computer.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin :auto;
+	padding:0;
+	font-familly: sans-serif;
+	color:white;
+	width:88%;
+	height:100vh;
+	overflow:hidden;
+	}
+.container
+{
+	text-align: center;
+	margin: auto;
+	width: 60%;
+}	
+	
+h1
+{
+	font-familly: sans-serif;  
+	font-size : 3em; 	
+	font-weight:bold;
+	color: #ff4500;
+	text-shadow: 2px 2px 2px black;
+}
+
+
+
+	/*--------------------------------------
+	|	Stylesheet de la page annonce       |
+	 --------------------------------------*/
+	 
+.box{
+	width: 95%;
+	padding:15px;
+	margin:auto;
+	background-color: #191919;
+	text-align:left;
+	border-radius:5px; 	
+	font-familly: sans-serif;
+	}
+	
+.box input
+{
+	background: none;
+	display: block;
+	margin :0 auto;
+	text-align: left; 
+	border: solid 2px orange;
+	padding : 5px 10px;
+	width : 80%;
+	outline: none;
+	border-radius: 5px;
+	transition :0.25s; 
+	color: #fff;
+	font-familly: sans-serif;
+
+}
+#btn
+{
+	background-color:orange;
+	margin:0 auto;
+	width:65%; 
+	text-align: center;	
+}
+#btn:hover
+{
+	color: forestgreen;
+	font-weight: bold;
+	border : 2px solid white;
+	box-shadow:2px 2px 2px black;
+}
+
+#error
+{
+	border:2px solid orange;
+	margin: auto;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 3px;
+	width: 99%;
+	background-color: #f64a5f;
+	display: none;
+}
+#resultat
+{
+	border:2px solid orange;
+	margin: auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	border-radius: 3px;
+	width: 99%;
+	background-color: forestgreen;
+	display: none;
+}
+
