@@ -120,4 +120,5 @@ window.onload = function () {
 
         }
     });
+    document.getElementById("supprimerdeslechargement").click();
 }
