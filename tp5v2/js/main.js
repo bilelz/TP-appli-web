@@ -91,7 +91,7 @@ window.onload = function () {
                 this.cityWeatherLoading = true;
 
                 // appel AJAX avec fetch
-                fetch('https://api.openweathermap.org/data/2.5/weather?q=' + _city.name + '&units=metric&lang=fr&APPID=ad6c3f76aa016ba417579de2f72afbe1'
+                fetch('https://api.openweathermap.org/data/2.5/weather?q=' + _city.name + '&units=metric&lang=fr&APPID=ad6c3f76aa016ba417579de2f72afbe1')
                     .then(function (response) {
                         return response.json();
                     })
@@ -120,5 +120,6 @@ window.onload = function () {
 
         }
     });
-    document.getElementById("supprimerdeslechargement").click();
+    document.getElementById("supprimerchargement").click();
+    
 }
