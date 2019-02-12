@@ -86,7 +86,7 @@
         <ul class="list-group">
             <a v-for="city in cityList" v-on:click="meteo(city)" class="list-group-item d-flex justify-content-between align-items-center">
                 {{city.name}}
-                <button v-on:click="remove(city)" class="btn btn-secondary btn-sm" title="Supprimer de la liste">&times;</button>
+                <button v-on:click="remove(city)" class="btn btn-secondary btn-sm" title="Supprimer de la liste" id="supprimerdeslechargement">&times;</button>
            
             </a>
         </ul>
