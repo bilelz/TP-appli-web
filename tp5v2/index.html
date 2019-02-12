@@ -47,6 +47,7 @@
     <script src="js/libs/form-jquery-validation.js"></script>
     <script src="js/libs/vue.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
 
 
 
@@ -86,7 +87,7 @@
         <ul class="list-group">
             <a v-for="city in cityList" v-on:click="meteo(city)" class="list-group-item d-flex justify-content-between align-items-center">
                 {{city.name}}
-                <button v-on:click="remove(city)" class="btn btn-secondary btn-sm" title="Supprimer de la liste" id="supprimerdeslechargement">&times;</button>
+                <button v-on:click="remove(city)" class="btn btn-secondary btn-sm" title="Supprimer de la liste" id="supprimerchargement">&times;</button>
            
             </a>
         </ul>
