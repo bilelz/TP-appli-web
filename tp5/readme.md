@@ -50,12 +50,12 @@ TP du jour
 
 ## 1. OpenWeatherMap - générer votre API Key
 
-* Créer un compte openweathermap sur https://openweathermap.org/appid et     récupérer votre API Key (onglet ```API Keys```) : https://home.openweathermap.org/api_keys 
+* Créer un compte openweathermap sur http://openweathermap.org/appid et     récupérer votre API Key (onglet ```API Keys```) : https://home.openweathermap.org/api_keys 
     * Exemple de clé (Api Key/appid): 0ada432b59deb9716c357092c5f79be6
-    * Exemple de réponse à l’API: https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=0ada432b59deb9716c357092c5f79be6
+    * Exemple de réponse à l’API: http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=0ada432b59deb9716c357092c5f79be6
 
-    * Analyser la structure de la réponse JSON https://openweathermap.org/current#current_JSON
-    * Documentation sur toute l’API : https://openweathermap.org/current
+    * Analyser la structure de la réponse JSON http://openweathermap.org/current#current_JSON
+    * Documentation sur toute l’API : http://openweathermap.org/current
 
 
 ## 2. Plateforme de dév
@@ -334,7 +334,7 @@ meteo : function (_city){
     this.cityWeatherLoading = true;
 
     // appel AJAX avec fetch
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+_city.name+'&units=metric&lang=fr&apikey=VOTRE_APIKEY')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+_city.name+'&units=metric&lang=fr&apikey=VOTRE_APIKEY')
         .then(function(response) {
             return response.json();
         })
