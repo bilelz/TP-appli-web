@@ -1,0 +1,78 @@
+td
+{
+    border: 1px solid black;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+img
+{
+    width: 2em;
+    height: 2em;
+}
+
+
+
+a:hover
+{
+    color:gray;
+}
+tr:nth-child(2n+1)
+{
+    background-color: rgb(162, 222, 230);
+}
+
+tr:hover
+{
+    background-color: rgb(136, 255, 146);
+}
+
+
+
+
+  body {
+
+    border: 1px solid black;
+    margin-bottom: 1em;
+    
+    background-image:url(fod.jpg) ;
+
+   
+
+background-size: 1200px 860px;
+
+
+  
+
+}
+
+
+
+@media only screen and (max-width: 840px) {
+    body {
+      background-color: rgb(66, 44, 3);
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 840px) {
+    body {
+     background-color: rgb(87, 4, 87);
+  }
+}
+
+.contour
+{
+   
+    background: url('fond_degraderouge.png') repeat-x;
+    border: 1px solid rgb(7, 26, 192);
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: rgb(2, 2, 8);
+    text-decoration: none;
+    box-shadow: 6px 6px 0px rgb(12, 76, 150);
+}
+
