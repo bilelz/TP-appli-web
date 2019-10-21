@@ -37,25 +37,11 @@ tr:hover
 
     
     
-    background-image:url(fod.jpg) ;
-
-   
-    div.column {
-        /* The background image must be 800px wide */
-        max-width: 800px;
-      }
-      
-      figure.fixedratio {
-        padding-top: 56.25%;  /* 450px/800px = 0.5625 */
-      
-        background-image: url(http://voormedia.com/examples/north-sea-regatta.jpg);
-        background-size: cover;
-        -moz-background-size: cover;  /* Firefox 3.6 */
-        background-position: center;  /* Internet Explorer 7/8 */
-      }
-
   
-
+      width: 800px;
+      
+   
+  }
 
 
 
