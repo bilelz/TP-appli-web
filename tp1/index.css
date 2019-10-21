@@ -33,6 +33,8 @@ tr:hover
 
 
 
+
+
   body {
 
     
@@ -41,7 +43,10 @@ tr:hover
       width: 800px;
       
    
+      
   }
+
+
 
 
 
@@ -70,4 +75,14 @@ tr:hover
     text-decoration: none;
     box-shadow: 6px 6px 0px rgb(12, 76, 150);
 }
+#photo-cv{
+    border-radius: 50% ;
+    height: 150px;
+    margin-bottom:2%;
+    width: 100px;
+}
 
+
+
+    
+ 
