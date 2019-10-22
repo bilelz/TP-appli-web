@@ -1,3 +1,12 @@
+
+body{
+    background-color:#e9ebee;              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: auto;
+    max-width: 800px;  
+
+}
 td
 {
     border: 1px solid black;
@@ -35,19 +44,16 @@ tr:hover
 
 
 
-  body {
-
-    
-    
-  
-      width: 800px;
-      
-   
-      
-  }
+ 
 
 
 
+#photo-cv{
+    border-radius: 50% ;
+    height: 150px;
+    margin-bottom:2%;
+    width: 100px;
+}
 
 
 
@@ -75,14 +81,4 @@ tr:hover
     text-decoration: none;
     box-shadow: 6px 6px 0px rgb(12, 76, 150);
 }
-#photo-cv{
-    border-radius: 50% ;
-    height: 150px;
-    margin-bottom:2%;
-    width: 100px;
-}
-
-
-
-    
  
