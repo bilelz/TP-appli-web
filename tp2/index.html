@@ -7,27 +7,69 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet"  href="index.css">
 
-        <style>
-          body{
-              background-color: #e9ebee;              
-              font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-              font-size: 16px;
-              margin: 0 auto;
-              max-width: 800px;              
-          }
-        </style>
         
-        <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
-        <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="js/main.js"></script>-->
+        <script src="formulaire.js"></script>
     </head>
     <body>        
-        <h1>tp2</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+        
+  
+
+      <h1> Saisie d'une fiche Personne </h1>
+
+     
+      <div id="formulaire">
+
+            <form method="post" action="">
+     
+
+              
+                    <table>
+                        <tr> <td><label for="nom">Nom </label></td>
+                             <td><input type="text" name="nom" id="nom" minlength="5" maxlength="20"/></td>
+                        </tr>
+                        <tr> 
+                            <td><label for="prenom">Prénom </label></td>
+                            <td><input type="text" name="prenom" id="prenom" minlength="5" maxlength="30" /></td>
+                        </tr>
+                        <tr> 
+                            <td><label for="date naissance">Date de naissance   </label></td>
+                            <td><input type="date" name="date naissance" id="datenaissance"  placeholder="JJ/MM/AAAA"/></td>
+                        </tr>
+                        <tr> 
+                            <td><label for="adresse">Adresse </label></td>
+                            <td><input type="text" name="adresse" id="adresse" /></td>
+                        </tr>
+                        <tr> 
+                            <td><label for="email">Mail </label></td>
+                            <td><input type="email" name="email" id="email" /></td>
+                        </tr>
+                        <tr>
+                               <td></td>
+                           
+                        <td><input type="submit" value="Valider"onclick="validation()"/></td>
+                        </tr>
+                    </table>
+        
+            
+
+              </form>
+
+            </div>
+
+            
+                   
+                   <div id="erreur" ></div>
+
+                <div id="resultat" ></div>
+                
+
+           
+
+            
+
+
+    
     </body>
 </html>
