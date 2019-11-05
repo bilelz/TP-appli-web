@@ -39,7 +39,7 @@ Le formulaire permettra de saisir les informations suivantes :
     2. Écrire le code HTML pour reproduire le formulaire suivant
         1. <img src="TP2table.jpg" alt="texte pour le titre, facultatif"/>
         2. vous pouvez utiliser un tableau HTML pour aligner tous les éléments
-        3. Documentation sur les formulaires : [http://www.w3schools.com/html/html_form_attributes.asp](http://www.w3schools.com/html/html_form_attributes.asp)
+        3. Documentation sur les formula ires : [http://www.w3schools.com/html/html_form_attributes.asp](http://www.w3schools.com/html/html_form_attributes.asp)
         4. Pour la date de naissance, utilisez l’attribut  ` placeholder="JJ/MM/AAAA" ` pour indiquer à l’utilisateur le format 
         5. Code HTML pour le bouton de validation 
         ` <input type="button" value="Valider"/> `
