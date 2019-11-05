@@ -1,0 +1,60 @@
+ body
+ {
+
+    background-color:rgb(175, 175, 175);              
+    font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;     
+
+ }
+
+ h1
+ {
+padding-left: 190px;
+ }
+
+ td:hover
+{
+
+    background-color: rgb(51, 180, 255);
+
+     border: 1px ;
+        border-radius: 5px;
+        font-size: 1em;
+        text-align: center; 
+}
+
+
+
+
+ form {
+     
+ 
+   padding-left: 240PX;
+   padding-top: 15px;
+   padding-bottom: 15px;
+background:rgb(255, 255, 255) ;
+border-radius: 30px;
+
+ }
+
+
+
+ #erreur
+ {
+   
+    background-color: rgb(128, 101, 129);
+    padding : 5px;
+    border:black;
+
+ }
+
+ #resultat
+ {
+    border-radius:30 ;
+    background-color: seagreen;
+    padding : 5px;
+   
+
+}
