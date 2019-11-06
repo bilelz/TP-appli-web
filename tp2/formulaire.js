@@ -58,6 +58,11 @@ function validation() {
     else
     if (nomValue.length>=5 && prenomValue.length>=5 && dateValue.length>=5 && emailValue.length>=5 &&adresseValue.length>=5)
     {
-        document.querySelector("#resultat").textContent="Bienvenue  " + document.querySelector("#nom").value + " " + document.querySelector("#prenom").value;
+
+
+        document.getElementById("resultat").innerHTML = "welcom " + document.querySelector("#nom").value + document.querySelector("#prenom").value
+        
         document.querySelector("#erreur").textContent=""; }
+        
+
 }
