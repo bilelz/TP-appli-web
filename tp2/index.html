@@ -19,10 +19,14 @@
       <h1> Saisie d'une fiche Personne </h1>
 
      
-      <div id="formulaire">
 
+
+      <div id="formulaire">
+<fieldset>
+
+        <legend>Personal information:</legend>
             <form method="post" action="">
-     
+               
 
               
                     <table>
@@ -35,20 +39,21 @@
                         </tr>
                         <tr> 
                             <td><label for="date naissance">Date de naissance   </label></td>
-                            <td><input type="date" name="date naissance" id="datenaissance"  placeholder="JJ/MM/AAAA"/></td>
+                            <td><input type="date" name="date naissance" id="datenaissance"  placeholder="JJ / MM / AAAA"/></td>
                         </tr>
                         <tr> 
                             <td><label for="adresse">Adresse </label></td>
-                            <td><input type="text" name="adresse" id="adresse" /></td>
+                            <td><input type="text" name="adresse" id="adresse"/></td>
                         </tr>
                         <tr> 
                             <td><label for="email">Mail </label></td>
-                            <td><input type="email" name="email" id="email" /></td>
+                            <td><input type="email" name="email" id="email" placeholder="............@......." /></td>
                         </tr>
                         <tr>
-                               <td></td>
-                           
-                        <td><input type="submit" value="Valider"onclick="validation()"/></td>
+                           <td></td>
+                        <td> 
+                            <input type="button" value="Valider" onclick="validation()" id="button" >    </td>
+
                         </tr>
                     </table>
         
@@ -56,12 +61,14 @@
 
               </form>
 
-          
+            </fieldset>
 
             </div>
 
 
             <div id="erreur" ></div>
+
+
 
             <div id="resultat" ></div>
             
