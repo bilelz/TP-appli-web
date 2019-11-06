@@ -60,7 +60,7 @@ function validation() {
     {
 
 
-        document.getElementById("resultat").innerHTML = "welcom " + document.querySelector("#nom").value + document.querySelector("#prenom").value
+        document.getElementById("resultat").innerHTML = "WELCOM " + document.querySelector("#nom  ").value + "   "+ document.querySelector("#prenom").value 
         
         document.querySelector("#erreur").textContent=""; }
         
