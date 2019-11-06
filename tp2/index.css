@@ -44,6 +44,7 @@ border-radius: 30px;
  #erreur
  {
    
+   border-radius:30 ;
     background-color: rgb(128, 101, 129);
     padding : 5px;
     border:black;
