@@ -64,5 +64,8 @@ function validation() {
         
         document.querySelector("#erreur").textContent=""; }
         
+        
+        
 
 }
+
