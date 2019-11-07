@@ -79,3 +79,10 @@ input{
 }
 
 
+#boutonReset
+{
+   border-radius: 1em;
+
+   background-color:rgb(255, 145, 145);
+
+}
