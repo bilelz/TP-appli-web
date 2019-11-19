@@ -68,3 +68,7 @@ function validation() {
         
 
 }
+/*
+function Reset() {
+    document.getElementsByClassName(".Arezki").textContent="" ;
+}*/
