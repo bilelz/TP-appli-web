@@ -34,28 +34,30 @@
               
                     <table>
                         <tr> <td><label for="nom">Nom </label></td>
-                             <td><input type="text" name="nom" id="nom" minlength="5" maxlength="20"/></td>
+                             <td><input class="Arezki" type="text" name="nom" id="nom" minlength="5" maxlength="20"/></td>
                         </tr>
                         <tr> 
                             <td><label for="prenom">Prénom </label></td>
-                            <td><input type="text" name="prenom" id="prenom" minlength="5" maxlength="30" /></td>
+                            <td><input class="Arezki" type="text" name="prenom" id="prenom" minlength="5" maxlength="30" /></td>
                         </tr>
                         <tr> 
                             <td><label for="date naissance">Date de naissance   </label></td>
-                            <td><input type="date" name="date naissance" id="datenaissance"  placeholder="JJ / MM / AAAA"/></td>
+                            <td><input class="Arezki" type="date" name="date naissance" id="datenaissance"  placeholder="JJ / MM / AAAA"/></td>
                         </tr>
                         <tr> 
                             <td><label for="adresse">Adresse </label></td>
-                            <td><input type="text" name="adresse" id="adresse"/></td>
+                            <td><input class="Arezki" type="text" name="adresse" id="adresse"/></td>
                         </tr>
                         <tr> 
                             <td><label for="email">Mail </label></td>
-                            <td><input type="email" name="email" id="email" placeholder="............@......." /></td>
+                            <td><input class="Arezki" type="email" name="email" id="email" placeholder="............@......." /></td>
                         </tr>
                         <tr>
                            <td> </td>
                         <td> 
                             <input type="button" value="Valider" onclick="validation()" id="button" >    </td>
+                            <td> 
+                                <input type="button" value="Reset" onclick="this.form.reset();" id="button2" >    </td>
                           
                         </tr>
                     </table>
