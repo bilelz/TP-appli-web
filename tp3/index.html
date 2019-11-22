@@ -10,6 +10,19 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
+<!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/popper.min.js"></script>
+
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>
+
+
+
         <style>
           body{
               background-color: #e9ebee;              
@@ -23,11 +36,88 @@
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
+
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <img src="../galilee.png" alt="Logo Galilee"/>
+
+    <body>   
+        
+        <div class="container">
+  
+  <h1>TP AW -Formulaire v2</h1>
+
+        <p>Avec Bootstrap & jQuery</p>
+
+
+    <form>
+            <div class="form-group row">
+                    <label for="inputnom" class="col-sm-2 col-form-label">Nom</label>
+                    <div class="col-sm-10">
+                      <input type="nom" class="form-control" id="inputnom" >
+                    </div>
+                  </div>
+
+
+        <div class="form-group row">
+          <label for="inputprenom" class="col-sm-2 col-form-label">Prenom</label>
+          <div class="col-sm-10">
+            <input type="prenom" class="form-control" id="inputprenom" >
+          </div>
+        </div>
+        
+            <div class="form-group row">
+                    <label for="inputdate" class="col-sm-2 col-form-label">Date de naissance </label>
+                    <div class="col-sm-10">
+                      <input type="date" class="form-control" id="inputdate"placeholder="dd/mm/yy">
+                    </div>
+                  </div>
+
+            <div class="form-group row">
+                    <label for="inputadresse" class="col-sm-2 col-form-label">Adresse</label>
+                    <div class="col-sm-10">
+                      <input type="adresse" class="form-control" id="inputadresse">
+                    </div>
+                  </div>
+
+        <div class="form-group row">
+          <label for="inputmail" class="col-sm-2 col-form-label">Mail</label>
+          <div class="col-sm-10">
+            <input type="mail" class="form-control" id="inputmail" placeholder="example@gmail.com">
+          </div>
+        </div>
+
+
+
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </div>
+      </form>
+
+
+ 
+
+
+    <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Corps de la modal à modifier après validation du formulaire</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
     </body>
 </html>
