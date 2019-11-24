@@ -4,7 +4,7 @@ function validation() {
     var prenomValue = document.querySelector("#prenom").value;
     var dateValue = document.querySelector("#datenaissance").value;
     var adresseValue = document.querySelector("#adresse").value;
-    var emailValue = document.querySelector("#email").value;
+    var emailValue = document.querySelector("#email").value; 
 
     if (nomValue.length==0) {
         document.querySelector("#erreur").textContent="le champ nom est vide  ";
