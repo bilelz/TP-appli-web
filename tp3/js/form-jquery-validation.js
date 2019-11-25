@@ -55,7 +55,8 @@ $(document).ready(function () {
                                     + '</br><a href="https://maps.google.com/maps?q='
                                     + document.querySelector("#Adresse").value
                                     + '"><img src="https://maps.googleapis.com/maps/api/staticmap?markers='
-                                    + document.querySelector("#Adresse").value + '&zoom=10&size=470x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/></a>');
+                                    + document.querySelector("#Adresse").value + '&zoom=10&size=470x300&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg"/> <br/>'
+                                    +   document.querySelector("#Adresse").value+ '  "Bienvenue https://www.google.com/maps/place " </a>');
                             }
 
                         }
