@@ -8,6 +8,7 @@ $(document).ready(function () {
 
 
 
+
     $("#envoyer").on("click", function (event) {
         event.preventDefault();
 
@@ -45,7 +46,7 @@ $(document).ready(function () {
                             if ($("#nom").val() !== "" && $("#Prenom").val() !== "" && $("#datepicker").val() !== ""
                                 && $("#Adresse").val() !== "" && $("#email").val() !== "") {
 
-                                    
+
                                 $('#myModal').modal("show");
                                 $(".modal-title").html("Bienvenue " + document.querySelector("#Prenom").value);
                                 $('.modal-body').html("Vous étes né le: " + document.querySelector("#datepicker").value
@@ -68,6 +69,7 @@ $(document).ready(function () {
 
 
         }
+
 
 
     });

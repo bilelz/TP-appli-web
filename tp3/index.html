@@ -1,6 +1,8 @@
 <!doctype html>
 <html>
 
+
+   
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,48 +12,39 @@
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
 
     <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <script src="js/popper.min.js"></script>
-
-
+  
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/form-jquery-validation.js"></script>
 
-   
 
 
-   
-    <script src="js/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    
     <link rel="stylesheet" href="css/jquery-ui.css">
     <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <script src="js/jquery-ui.js"></script>
 
-
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
-    $( function() {
-      $( "#datepicker" ).datepicker();
-    } );
-    </script>
+        $( function() {
+            $( "#datepicker" ).datepicker({dateFormat: 'dd/mm/yy', maxDate:new Date()})
+        } );
+        </script>
 
 
 
- 
-
-
-         
+   
 
 
 
-       
+
+
+
 
 
     <style>
@@ -95,9 +88,9 @@
 
             <div class="form-group row">
                
-                <label for="datepicker" class="col-sm-2 col-form-label">Date de naissance</label>
+                <label for="datepicker " class="col-sm-2 col-form-label">Date de naissance</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control champ" id="datepicker" placeholder="Date de naissance">
+                    <input type="text" class="form-control champs" id="datepicker" placeholder="Date de naissance">
 
 
                 </div>

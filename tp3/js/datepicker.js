@@ -1,13 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function (){
 
-  
-
-
-
-
-        $( function() {
-          $( "#datepicker" ).datepicker();
-        } );
-
-
+    $("#datepicker").datepicker({dateFormat: 'dd/mm/yy',});
 });
