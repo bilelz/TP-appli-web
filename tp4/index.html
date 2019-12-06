@@ -10,12 +10,24 @@
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
 
+    <script src="js/gps.js"></script>
+    <script src="js/store.js"></script>
     <script src="js/jquery-3.2.1.slim.min.js"></script>
+
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+   
     <script src="js/form-jquery-validation.js"></script>
+
+
+
+
+
+
+
 
 </head>
 
@@ -32,7 +44,10 @@
                 <div class="form-group col">
                     <input type="text" class="form-control" placeholder="" id="name">
                 </div>
-                <div class="form-group col-1">
+
+
+                <div id="compteur1" class="form-group col-1">
+
                     0 car.
                 </div>
             </div>
@@ -43,17 +58,27 @@
                 <div class="form-group col">
                     <input type="text" class="form-control" placeholder="" id="firstname">
                 </div>
-                <div class="form-group col-1">
+
+                <div id="compteur2" class="form-group col-1">
                     0 car.
                 </div>
             </div>
+
             <div class="form-row">
                 <div class="form-group col-2">
                     <label for="birth">Date de naissance</label>
                 </div>
                 <div class="form-group col">
-                    <input type="date" class="form-control" placeholder="" id="birth">
+                    <input type="date" class="form-control" autocomplete="off" placeholder="" id="birth">
                 </div>
+
+
+
+
+
+
+
+
                 <div class="form-group col-1">
                 </div>
             </div>
@@ -64,8 +89,10 @@
                 <div class="form-group col">
                     <input type="text" class="form-control" placeholder="" id="adresse">
                     <div id="map">
-                        <!--  image Google Map à mettre à jour -->                            
-                        <img alt="map" width="300" src="https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg">
+                        </br>
+                        <!--  image Google Map à mettre à jour -->
+                        <img alt="map" width="300"
+                            src="https://maps.googleapis.com/maps/api/staticmap?markers=latitude,longitude&zoom=14&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg">
                     </div>
                 </div>
                 <div class="form-group col-1">
@@ -91,7 +118,7 @@
             </div>
         </form>
 
-        
+
 
         <hr>
         <h4>Liste des contacts</h4>
@@ -108,25 +135,25 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>oConnor</td>
-                    <td>Sarah</td>
-                    <td>21/01/2000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td>
-                        <a href="https://maps.google.com/?q=Paris">Paris</a>
+
                     </td>
                     <td>
-                        <a href="mailto:sarah.oconnor@blabla.com">sarah.oconnor@blabla.com</a>
+
                     </td>
                 </tr>
                 <tr>
-                    <td>Vandamme</td>
-                    <td>JL</td>
-                    <td>01/01/1950</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                     <td>
-                        <a href="https://maps.google.com/?q=Bali">Bali</a>
+
                     </td>
                     <td>
-                        <a href="mailto:jlv@blabla.com">jlv@blabla.com</a>
+
                     </td>
                 </tr>
             </tbody>
