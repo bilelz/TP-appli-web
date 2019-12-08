@@ -7,11 +7,18 @@
     margin: 0 auto;
     max-width: 800px;     
 
+   
+
+    background:url(FODE.jpg) no-repeat center ; 
+    background-size: cover; 
+    padding-bottom: 200px;
+
  }
 
  h1
  {
 padding-left: 190px;
+color: beige;
  }
 
 
