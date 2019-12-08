@@ -1,10 +1,11 @@
 
 body{
+    
     background-color:#e9ebee;              
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: auto;
-    max-width: 700px;  
+    width: 700px;  
    background:url(fod.jpg) no-repeat center ; 
     background-size:contain; 
  padding-bottom: 30px;
@@ -17,8 +18,9 @@ td
 }
 table
 {
+   
     border-collapse: collapse;
-    width: 100%;
+     
     background-color: rgb(255, 255, 255);
 }
 img
@@ -74,7 +76,7 @@ tr:hover
 
 .contour
 {
-   
+
     background: url('fond_degraderouge.png') repeat-x;
     border: 1px solid rgb(7, 26, 192);
     border-radius: 5px;
