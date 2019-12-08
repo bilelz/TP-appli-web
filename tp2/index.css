@@ -7,13 +7,14 @@
     margin: 0 auto;
     max-width: 800px;     
 
-   
+    background:url(FODE.jpg) no-repeat center ;
+background-size: 120%;
 
-    background:url(FODE.jpg) no-repeat center ; 
-    background-size: cover; 
+  
    
 
  }
+ 
 
 #formulaire{
 
