@@ -11,14 +11,16 @@
 
     background:url(FODE.jpg) no-repeat center ; 
     background-size: cover; 
-    padding-bottom: 200px;
+    padding-bottom: 300px;
 
  }
+
+
 
  h1
  {
 padding-left: 190px;
-color: beige;
+color: rgb(19, 19, 18);
  }
 
 
@@ -46,7 +48,7 @@ color: beige;
    padding-bottom: 15px;
 background:rgb(255, 255, 255) ;
 border-radius: 30px;
-
+background: rgb(156, 156, 156);
 
 
  }
