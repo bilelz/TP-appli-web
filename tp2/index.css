@@ -15,12 +15,18 @@
 
  }
 
+#formulaire{
 
+   color: rgb(0, 0, 0);
+font-weight: bold;
+
+
+}
 
  h1
  {
 padding-left: 190px;
-color: rgb(19, 19, 18);
+color: rgb(218, 218, 214);
  }
 
 
