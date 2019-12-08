@@ -4,10 +4,11 @@ body{
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: auto;
-    max-width: 800px;  
-   width: 700px ;height:100%;  background:url(fod.jpg) no-repeat center ; 
-    background-size: contain; 
- 
+    max-width: 700px;  
+   background:url(fod.jpg) no-repeat center ; 
+    background-size:contain; 
+ padding-bottom: 30px;
+ padding-top: 30px;
 
 }
 td
