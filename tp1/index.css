@@ -70,19 +70,19 @@ tr:hover
 
 @media only screen and (max-width: 840px) {
     body {
-      background-color: rgb(66, 44, 3);
+      background-color: rgba(247, 229, 196, 0.671);
     }
   }
   @media only screen and (min-width: 600px) and (max-width: 840px) {
     body {
-     background-color: rgb(87, 4, 87);
+     background-color: rgba(112, 107, 112, 0.705);
   }
 }
 
 .contour
 {
 
-    background: url('fond_degraderouge.png') repeat-x;
+
     border: 1px solid rgb(7, 26, 192);
     border-radius: 5px;
     font-size: 1em;
