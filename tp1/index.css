@@ -73,7 +73,7 @@ tr:hover
       background-color: rgba(247, 229, 196, 0.671);
     }
   }
-  @media only screen and (min-width: 600px) and (max-width: 840px) {
+  @media only screen and (min-width: 360px) and (max-width: 740px) {
     body {
      background-color: rgba(112, 107, 112, 0.705);
   }
