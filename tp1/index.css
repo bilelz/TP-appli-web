@@ -2,11 +2,7 @@
 body{
     
 
-    background:  url(fod.jpg) no-repeat center ; 
-    background-size:contain;
-    width: 740px;
-    padding-bottom: 20px;
-    padding-top: 40px;
+    
 
                 
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
@@ -68,14 +64,21 @@ tr:hover
 
 
 
-@media only screen and (max-width: 840px) {
+@media only screen  {
     body {
-      background-color: rgba(247, 229, 196, 0.671);
+        background:  url(fod.jpg) no-repeat center ; 
+    background-size:contain;
+    width: 740px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+     
     }
   }
   @media only screen and (min-width: 360px) and (max-width: 740px) {
     body {
-     background-color: rgba(112, 107, 112, 0.705);
+        background:  url(fod.jpg) no-repeat center ; 
+        background-size:contain;
+        
   }
 }
 
