@@ -73,13 +73,7 @@ tr:hover
     padding-top: 40px;
      
     }
-  }
-  @media only screen  {
-    body {
-        background:  url(fod.jpg) no-repeat center ; 
-        background-size:contain;
-        
-  }
+  
 }
 
 .contour
