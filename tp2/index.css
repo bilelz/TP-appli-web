@@ -20,7 +20,7 @@
     
 
       background:url(FODE.jpg) no-repeat center ;
-       background-size:150%;
+       background-size:200%;
      width: 800px;
     height: 100%;
     margin: auto;
@@ -31,9 +31,8 @@
    body {
   
          background:url(FODE.jpg) no-repeat center ;
-       background-size: 200%;
-  height: 100%;
-       width: auto;
+       background-size: 400%;
+  
   margin: auto;
  }
 }
