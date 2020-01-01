@@ -33,7 +33,7 @@
        background-size: cover;
   height: 100%;
        width: auto;
-  
+  padding: 10px;
  }
 }
 
@@ -87,7 +87,7 @@ background: rgba(226, 226, 226, 0.548);
 
  #erreur{ 
    margin: 0 auto;
-   width: auto;
+   width: 500px;
    padding: center;
    border: 1px solid black;
    border-radius: 20px;
@@ -99,7 +99,7 @@ background: rgba(226, 226, 226, 0.548);
 #resultat{ 
    text-align: center;
    margin: 0 auto;
-   width: auto;
+   width: 500px;
    padding:center;
   
    border-radius: 20px;
