@@ -15,8 +15,8 @@ body{
      
 
         background:   url(fod.jpg) no-repeat center  ; 
-        background-size:800PX;
-      width: 800PX;
+        background-size:contain;
+      width: 700PX;
      
     }
   }
@@ -25,8 +25,8 @@ body{
     body {
    
         background:  url(fod.jpg) no-repeat center ; 
-        background-size:679px;
-        width: 679px;
+        background-size:contain;
+        width: 100%;
     
   }
 }
