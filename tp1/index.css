@@ -62,30 +62,6 @@ tr:hover
 
 
 
-@media only screen {
-    body {
-     
-
-        background:  url(fod.jpg) no-repeat center ; 
-        background-size:contain;
-        width: 740px;
-        padding-bottom: 20px;
-        padding-top: 40px;
-    
-
-    }
-  }
-  @media only screen and (min-width: 360px) and (max-width: 740px) {
-    body {
-   
-        background:  url(fod.jpg) no-repeat center ; 
-        background-size:cover;
-   
-      
-    
-  }
-}
-
 .contour
 {
 
@@ -100,3 +76,27 @@ tr:hover
     box-shadow: 6px 6px 0px rgb(12, 76, 150);
 }
  
+
+
+@media only screen {
+    body {
+     
+
+        background:  url(fod.jpg) no-repeat center ; 
+        background-size:contain;
+        width: 700px;
+     
+    }
+  }
+
+  @media only screen and (min-width: 354px) and (max-width: 1000px) {
+    body {
+   
+        background:  url(fod.jpg) no-repeat  ; 
+        background-size:contain;
+        width: 700px;
+      
+    
+  }
+}
+
