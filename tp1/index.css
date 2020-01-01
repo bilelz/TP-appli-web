@@ -21,16 +21,7 @@ body{
     }
   }
 
-  @media only screen and (min-width: 0px) and (max-width: 672px) {
-    body {
-   
-        background:  url(fod.jpg) no-repeat center ; 
-        background-size:cover;
-     
-      
-    
-  }
-}
+  
 
 
 
