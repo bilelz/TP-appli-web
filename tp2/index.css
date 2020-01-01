@@ -20,9 +20,10 @@
     
 
       background:url(FODE.jpg) no-repeat center ;
-       background-size:cover;
+       background-size:150%;
      width: 800px;
     height: 100%;
+    margin: auto;
    }
  }
 
@@ -30,10 +31,10 @@
    body {
   
          background:url(FODE.jpg) no-repeat center ;
-       background-size: cover;
+       background-size: 200%;
   height: 100%;
        width: auto;
-   padding: 5px;
+  margin: auto;
  }
 }
 
