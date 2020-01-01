@@ -6,7 +6,7 @@ body{
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: auto;
- 
+
 
 }
 
@@ -14,19 +14,19 @@ body{
     body {
      
 
-        background:  url(fod.jpg) no-repeat center ; 
-        background-size:contain;
-        width: 700px;
+        background:   url(fod.jpg) no-repeat center  ; 
+        background-size:800PX;
+      width: 800PX;
      
     }
   }
 
-  @media only screen and (min-width: 0px) and (max-width: 672px) {
+  @media only screen and (min-width: 0px) and (max-width: 679px) {
     body {
    
         background:  url(fod.jpg) no-repeat center ; 
-        background-size:100%;
-        width: 100%;
+        background-size:679px;
+        width: 679px;
     
   }
 }
