@@ -93,8 +93,8 @@ tr:hover
     body {
    
         background:  url(fod.jpg) no-repeat  ; 
-        background-size:contain;
-        width: 100%;
+      
+        width: auto;
       
     
   }
