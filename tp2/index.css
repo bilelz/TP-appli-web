@@ -5,16 +5,40 @@
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: 0 auto;
-    max-width: 800px;     
+      
 
-    background:url(FODE.jpg) no-repeat center ;
-background-size:100%;
+ 
+
 
   
    
 
  }
  
+ @media only screen {
+   body {
+    
+
+      background:url(FODE.jpg) no-repeat center ;
+       background-size:cover;
+     width: 800px;
+    height: 100%;
+   }
+ }
+
+ @media only screen and (min-width: 0px) and (max-width: 679px) {
+   body {
+  
+         background:url(FODE.jpg) no-repeat center ;
+       background-size: cover;
+  height: 100%;
+       width: auto;
+   padding: 5px;
+ }
+}
+
+
+
 
 #formulaire{
 
@@ -63,7 +87,7 @@ background: rgba(226, 226, 226, 0.548);
 
  #erreur{ 
    margin: 0 auto;
-   width: 600px;
+   width: auto;
    padding: center;
    border: 1px solid black;
    border-radius: 20px;
@@ -75,7 +99,7 @@ background: rgba(226, 226, 226, 0.548);
 #resultat{ 
    text-align: center;
    margin: 0 auto;
-   width: 600px;
+   width: auto;
    padding:center;
   
    border-radius: 20px;
