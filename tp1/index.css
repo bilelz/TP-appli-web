@@ -92,10 +92,10 @@ tr:hover
   @media only screen and (min-width: 300px) and (max-width: 672px) {
     body {
    
-        background:  url(fod.jpg) no-repeat  ; 
-      
-        width: auto;
-      
+        background:  url(fod.jpg) no-repeat center ; 
+        background-size:contain;
+        width: 672px;
+      margin: 2px;
     
   }
 }
