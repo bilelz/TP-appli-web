@@ -25,10 +25,8 @@ body{
     body {
    
         background:  url(fod.jpg) no-repeat center ; 
-        background-size: cover;
-   height: 100%;
-        width: 100%;
-    padding: 5px;
+        background-size: 200%;
+   
   }
 }
 
