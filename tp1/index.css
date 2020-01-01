@@ -25,9 +25,9 @@ body{
     body {
    
         background:  url(fod.jpg) no-repeat center ; 
-        background-size:contain;
-        width: 672px;
-      margin: 2px;
+        background-size:cover;
+     
+      
     
   }
 }
