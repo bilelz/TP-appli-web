@@ -5,7 +5,7 @@
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: 0 auto;
-      
+      width: 700px;
 
  
 
@@ -21,8 +21,8 @@
 
       background:url(FODE.jpg) no-repeat center ;
        background-size:cover;
-     width: 800px;
-    height: 100%;
+     width: 700px;
+  
    }
  }
 
@@ -31,9 +31,9 @@
   
          background:url(FODE.jpg) no-repeat center ;
        background-size: cover;
-  height: 100%;
+ 
        width: auto;
-  padding: 10px;
+  
  }
 }
 
