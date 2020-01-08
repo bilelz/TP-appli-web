@@ -12,17 +12,7 @@
   <link rel="stylesheet" href="css/templatemo-style.css" />
 
 
-
-
-
-
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/templatemo-style1.css">
-
-
-
-
 
   <title>Arezki <uppercase>BENSAID</uppercase>
   </title>
@@ -32,158 +22,133 @@
 
 <body>
 
-
-
-
-
-
-
-  <div class="fixed-header">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Puzzle</a>
-      </div>
-      <nav class="main-menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#contact">Contact me </a></li>
-
-          <li><a class="download cv" href="https://github.com/bensaid01/aw3ir" target="_blank">Github</a></li>
-          <li><a class="download cv" href="https://fr.linkedin.com/in/arezki-" target="_blank">linkedin</a></li>
-
-
-
-
-
-          <li><a class="download cv" href="CV arezki.pdf" target="_blank">Download CV</a></li>
-        </ul>
-      </nav>
-
-    </div>
-
-  </div>
-
-
-
-
-  </div>
-
-
-
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.singlePageNav.min.js"></script>
-  <script>
-    // Check scroll position and add/remove background to navbar
-    function checkScrollPosition() {
-      if ($(window).scrollTop() > 50) {
-        $(".fixed-header").addClass("scroll");
-      } else {
-        $(".fixed-header").removeClass("scroll");
-      }
-    }
-
-    $(document).ready(function () {
-      // Single page nav
-      $('.fixed-header').singlePageNav({
-        offset: 59,
-        filter: ':not(.external)',
-        updateHash: true
-      });
-
-      checkScrollPosition();
-
-      // nav bar
-      $('.navbar-toggle').click(function () {
-        $('.main-menu').toggleClass('show');
-      });
-
-      $('.main-menu a').click(function () {
-        $('.main-menu').removeClass('show');
-      });
-    });
-
-    $(window).on("scroll", function () {
-      checkScrollPosition();
-    });
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-
-
-
-
-    <div class="container-fluid tm-brand-container-outer">
-      <div class="row">
-        <div class="col-12" id="home">
-
-          <!-- Logo Area -->
-          <!-- Black transparent bg -->
+    <div class="fixed-header">
+    
+        <div class="container ">
+          <div class="navbar-header">
+    
+          
+            <button type="button" class="navbar-toggle">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+          </div>
         
-
-
+          <nav class="main-menu" >
+         
+            <ul>
+            
+                
+                <a class="navbar-brand" href="#about me">AREZKI.BENSAID </a>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#contact">Contact me </a></li>
+    
+              <li><a class="gethub" href="https://github.com/bensaid01/aw3ir" target="_blank">Github</a></li>
+              <li><a class="linkedin" href="https://fr.linkedin.com/in/arezki-" target="_blank">linkedin</a></li>
+    
+    
+              <li><a class="download cv" href="CV arezki.pdf" target="_blank">Download CV</a></li>
+              
+            </ul>
+           
+          </nav>
+          
         </div>
+    
+        
+       
       </div>
+    
+      
+    
+    
+      </div>
+    
+     
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script>
+      // Check scroll position and add/remove background to navbar
+      function checkScrollPosition() {
+        if ($(window).scrollTop() > 50) {
+          $(".fixed-header").addClass("scroll");
+        } else {
+          $(".fixed-header").removeClass("scroll");
+        }
+      }
+    
+      $(document).ready(function () {
+        // Single page nav
+        $('.fixed-header').singlePageNav({
+          offset: 59,
+          filter: ':not(.external)',
+          updateHash: true
+        });
+    
+        checkScrollPosition();
+    
+        // nav bar
+        $('.navbar-toggle').click(function () {
+          $('.main-menu').toggleClass('show');
+        });
+    
+        $('.main-menu a').click(function () {
+          $('.main-menu').removeClass('show');
+        });
+      });
+    
+      $(window).on("scroll", function () {
+        checkScrollPosition();
+      });
+    </script>
+    
+    
 
-      <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
-          <div class="tm-brand-container text-center">
 
 
-            <h6 class="tm-brand-name">Arezki BENSAID</h6>
-            <p class="tm-brand-description mb-0">Prochainement Diplômé en ~ Ingénierie et
-              innovation en développement web et réseaux informatique ~
-              a l'Institut Galilée qui figurent parmi les meilleurs institut en ile-de-France .
-              <br>
-              Recherche stage de fin d'études de 6 mois à parti du Mars 2020 . </p>
 
+
+    <!-- Welcome Section -->
+    <section  id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg" > 
+      <div class="container-fluid tm-brand-container-outer" >
+        <div class="row" id="home">
+          <div class="col-12">
+            <!-- Logo Area -->
+            <!-- Black transparent bg -->
+            <div class="ml-auto mr-0 tm-bg-black-transparent text-white tm-brand-container-inner">
+              <div class="tm-brand-container text-center">
+            
+                <p  class="tm-brand-description mb-0">Prochainement Diplômé en ~ Ingénierie et
+                    innovation en développement web et réseaux informatique ~
+                    a l'Institut Galilée qui figurent parmi les meilleurs institut en ile-de-France .
+                </br> 
+              </br>
+                    Recherche stage de fin d'études de 6 mois à parti d'avril 2020 
+  </p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
 
-    </div>
+   
+      <div class="tm-bg-white-transparent tm-welcome-container"  >
+        <div class="container-fluid">
+          <div class="row h-100">
+            <!-- Welcome Text -->
+            <!-- White transparent bg -->
 
 
 
 
 
-
-
-
-
-    <div class="tm-bg-white-transparent tm-welcome-container">
-      <div class="container-fluid">
-        <div class="row h-100">
-          <!-- Welcome Text -->
-          <!-- White transparent bg -->
-          <div class="col-md-7 tm-welcome-left-col">
+      
+          <div class="col-md-6 tm-welcome-left-col">
             <div class="tm-welcome-left">
-              <h1 class="tm-welcome-title">
-                <p>About me </p>
-              </h1>
-              <span class="tm-title-small">
-                ""Une petite présentation pour mieux me connaître""
-              </span>
+              <h4 class="tm-welcome-title">About me</h4>
 
               <p class="pb-0">
 
@@ -196,13 +161,15 @@
             </div>
           </div>
           <!-- Brown bg -->
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="tm-welcome-right">
               <i class="fas fa-4x fa-address-card p-3 tm-welcome-icon"></i>
               <p class="mb-0">
 
+
+                
                 <lu>
-                  <h1>Mes compétences</h1>
+                  <h4>Mes compétences</h4>
                   <li> Html5 . CSS3 . JavaScript </li>
                   <li> Jquery </li>
                   <li> JAVA8/JEE8 </li>
@@ -327,14 +294,16 @@
               <i class="fas fa-5x fa-briefcase tm-contact-item-icon"></i>
               <p class="mb-0">
 
-
-                <h3 class="tm-text-dark-gray">
-                  Master 2 Ingénierie et innovation en image et réseaux <br />
-                  « Institut Galilée» <br />
                   <span class="tm-title-small">
+                       Master 2 <br /> Ingénierie et innovation en image et réseaux 
+                      « Institut Galilée» <br />
+                     
+                    </span>
+
+                <h6 class="tm-text-dark-gray">
                     (En cours )
-                  </span>
-                </h3>
+                 
+                </h6>
               </p>
             </div>
 
@@ -342,23 +311,53 @@
             <div class="tm-contact-item">
               <i class="fas fa-5x fa-building tm-contact-item-icon"></i>
               <p class="mb-0">
-                Integer id malesuada ligula. Cras in fringilla nibh, sed
-                semper turpis. Aliquam efficitur nisl nec.
+                  <span class="tm-title-small">
+                      	Master en Informatique Industriel  <br />
+                    </span>
+                    <h6 class="tm-text-dark-gray">
+                        (2017)
+                     
+                    </h6>
+                    <span class="tm-title-small">
+                        	Licence Électrotechnique  <br />
+                      </span>
+                      <h6 class="tm-text-dark-gray">
+                          (2016)
+                       
+                      </h6>
+                    
+
+
+
+                
+                 
+                  
               </p>
             </div>
+
+
 
             <div class="tm-contact-item">
               <i class="fas fa-5x fa-balance-scale tm-contact-item-icon"></i>
               <p class="mb-0">
-
-
-                Leadership
-                • Responsable executive lounge,
-                la presentation et la bonne humeur sont mes outils de travail a l’hotel collectionneur -paris .
-                • Réceptionniste & bagagiste
-                hotel holiday inn – Paris
-                • Diplome Sécurité (S.Q.P.A.P.S) & SST « aout 2018 »
-                délégué d’une équipe d'agent de securite au musée Christie’s.
+                
+                  <span class="tm-title-small" >
+                      Centre d’intérêt<br />
+                     
+                  </span>
+                  
+                  <h6 class="tm-text-dark-gray">
+                      Leadership</br>
+                      • Responsable executive lounge,
+                      la presentation et la bonne humeur sont mes outils de travail a l’hotel collectionneur -paris </br>
+                      • Réceptionniste & bagagiste
+                      hotel holiday inn – Paris</br>
+                       
+                      • Diplome Sécurité (S.Q.P.A.P.S) & SST « aout 2018 »
+                   délégué d’une équipe d'agent de securite au musée Christie’s.
+                      
+                    </h6>
+                 
 
               </p>
             </div>
@@ -382,7 +381,7 @@
         <section class="contact" id="contact">
           <div class="container topCon">
 
-            <h2>Me contacter</h2>
+            <h3>Me contacter</h3>
             <p>N'hésitez pas à me contacter pour plus d'informations.</p>
           </div>
 
@@ -433,6 +432,10 @@
               <button type="valide" class="btn tm-btn-valide rounded-0 text-white">
                 Submit
               </button>
+
+
+              <a href="/live/2116-blugoon" target="_blank" class="btn btn-info btn-lg btn-margin" onclick="ga('send', 'event', 'button', 'View', '2116_blugoon');" role="button">Live View</a>
+
             </div>
           </form>
 
@@ -491,6 +494,14 @@
       });
     });
   </script>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
