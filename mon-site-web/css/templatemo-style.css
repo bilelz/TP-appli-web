@@ -126,9 +126,11 @@ a:hover {
 }
 
 .tm-welcome-left {
-  padding-right: 30px;
+  padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  font-size: 1.1rem;
 }
 
 .tm-welcome-left-col {
