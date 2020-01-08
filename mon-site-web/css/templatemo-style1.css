@@ -63,6 +63,8 @@ p {
     color:  #93FAFF;
     font-weight:300;
     font-size: 32px;
+    
+   
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -80,7 +82,7 @@ p {
 .fixed-header ul li a{
     text-decoration:none;
     color:#fff;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     padding: 10px 25px 0;    
 }
