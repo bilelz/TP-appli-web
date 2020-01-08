@@ -44,7 +44,7 @@ p {
     z-index:111;
     transition:all 0.4s;
     -webkit-transition:all 0.4s;
-    padding: 30px 0px;
+    padding: 25px 0px;
 }
 .navbar-toggle {
     position: absolute;
@@ -82,7 +82,7 @@ p {
     color:#fff;
     font-size: 20px;
     font-weight: 300;
-    padding: 10px 30px 0;    
+    padding: 10px 18px 0;    
 }
 .fixed-header ul li a:hover,
 .fixed-header ul li .current{
