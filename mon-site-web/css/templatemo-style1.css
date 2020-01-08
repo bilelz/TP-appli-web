@@ -89,8 +89,14 @@ p {
     color: #93FAFF;
     border-top:2px solid #93FAFF;
 }
+
+/* 
+
+bare de hade
+
+*/
 .fixed-header {
-    background: transparent;
+    background: rgba(0, 0, 0, 0.274);
 }
 .fixed-header.scroll {
     background: rgba(2, 61, 105, 0.80);
@@ -421,6 +427,7 @@ p {
         max-height: 0;
         transition: max-height 0.3s;
         overflow: hidden;
+     
     }
     /* http://css3.bradshawenterprises.com/animating_height/ */
     .main-menu.show {
