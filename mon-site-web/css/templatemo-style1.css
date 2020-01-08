@@ -44,7 +44,7 @@ p {
     z-index:111;
     transition:all 0.4s;
     -webkit-transition:all 0.4s;
-    padding: 35px 0px;
+    padding: 30px 0px;
 }
 .navbar-toggle {
     position: absolute;
@@ -60,13 +60,13 @@ p {
     display:none;
 }
 .navbar-brand {
-    color: #fff;
+    color:  #93FAFF;
     font-weight:300;
-    font-size: 38px;
+    font-size: 34px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #93FAFF;
+    color: rgb(9, 255, 50);
 }
 .fixed-header ul{
     padding:0;
@@ -96,7 +96,7 @@ bare de hade
 
 */
 .fixed-header {
-    background: rgba(0, 0, 0, 0.274);
+    background: rgba(0, 0, 0, 0.534);
 }
 .fixed-header.scroll {
     background: rgba(2, 61, 105, 0.80);
