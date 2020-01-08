@@ -88,18 +88,18 @@ a:hover {
 }
 
 .tm-brand-container {
-  padding: 85px 120px;
+  padding: 70px 80px;
 }
 /*
 
   AREZKI 3
 */
 .tm-brand-name {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .tm-brand-description {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .parallax-window {
@@ -122,13 +122,13 @@ a:hover {
 }
 
 .tm-welcome-title {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .tm-welcome-left {
   padding-right: 30px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .tm-welcome-left-col {
@@ -139,7 +139,7 @@ a:hover {
 .tm-welcome-right {
   color: white;
   background-color: #986665;
-  padding: 30px 43px 70px;
+  padding: 20px 43px 30px;
   height: 100%;
 }
 
@@ -210,7 +210,7 @@ a:hover {
   Contact section
 */
 p {
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 /*
