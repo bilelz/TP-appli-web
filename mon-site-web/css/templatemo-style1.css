@@ -62,7 +62,7 @@ p {
 .navbar-brand {
     color:  #93FAFF;
     font-weight:300;
-    font-size: 34px;
+    font-size: 32px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -82,7 +82,7 @@ p {
     color:#fff;
     font-size: 20px;
     font-weight: 300;
-    padding: 10px 18px 0;    
+    padding: 10px 25px 0;    
 }
 .fixed-header ul li a:hover,
 .fixed-header ul li .current{
