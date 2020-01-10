@@ -88,8 +88,7 @@ a:hover {
 }
 
 .tm-brand-container {
-  padding: 7 
-  0px 20px;
+  padding: 90px 20px;
 }
 /*
 
@@ -124,7 +123,7 @@ a:hover {
 }
 
 .tm-welcome-title {
-  margin-bottom: 0px;
+  margin-bottom: 20px;
 }
 
 .tm-welcome-left {
@@ -425,7 +424,7 @@ p {
 .navbar-brand {
     color:  #93FAFF;
     font-weight:300;
-    font-size: 34px;
+    font-size: 30px;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -438,14 +437,14 @@ p {
 }
 .fixed-header ul li{
     display:inline-block;
-    padding: 15px 0px;
+    padding: 5px 0px;
 }
 .fixed-header ul li a{
     text-decoration:none;
     color:rgb(255, 249, 249);
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
-    padding: 10px 20px 0;    
+    padding: 10px 10px 0;    
 }
 .fixed-header ul li a:hover,
 .fixed-header ul li .current{
