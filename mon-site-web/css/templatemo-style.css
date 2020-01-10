@@ -88,7 +88,7 @@ a:hover {
 }
 
 .tm-brand-container {
-  padding: 90px 20px;
+  padding:77px 20px;
 }
 /*
 
@@ -406,7 +406,7 @@ p {
     z-index:111;
     transition:all 0.4s;
     -webkit-transition:all 0.4s;
-    padding: 35px 0px;
+    padding: 31px 0px;
 }
 .navbar-toggle {
     position: absolute;
@@ -428,7 +428,7 @@ p {
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
-    color: #93FAFF;
+    color: rgb(47, 255, 40);
 }
 .fixed-header ul{
     padding:0;
@@ -444,7 +444,7 @@ p {
     color:rgb(255, 249, 249);
     font-size: 20px;
     font-weight: 300;
-    padding: 10px 10px 0;    
+    padding: 10px 7px 0;    
 }
 .fixed-header ul li a:hover,
 .fixed-header ul li .current{
