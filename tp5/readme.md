@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://master3ir2020.slack.com/messages/aw">
+  <a href="https://3ir2019.slack.com">
      <img src="https://github.com/bilelz/tpaw/blob/master/galilee.png?raw=true" alt="Logo Master" width=100/>
   </a>  
   <br/>
-  Master 3IR² | <a href="https://master3ir2020.slack.com/messages/aw">master3ir2020.slack.com</a>
+  Master 3IR² | <a href="https://3ir2019.slack.com/messages/aw">3ir2019.slack.com</a>
 
 <h3 align="center">TP5 : Application Metéo ☀️
 </h3>
@@ -38,7 +38,7 @@ TP du jour
 
 ## 0. Prérequis (⚠ important)
 
-* Lire **tout** l'énoncé avant de commencer le TP.
+* Lire **tout** l'énnoncé avant de commencer le TP.
 
 ❓❓Si vous avez des questions ou des erreurs dans votre code : 
 * formater (indenter) bien votre code (raccourci Visual Studio Code : Ctrl + K puis Ctrl + F)
@@ -50,12 +50,12 @@ TP du jour
 
 ## 1. OpenWeatherMap - générer votre API Key
 
-* Créer un compte openweathermap sur https://openweathermap.org/appid et     récupérer votre API Key (onglet ```API Keys```) : https://home.openweathermap.org/api_keys 
+* Créer un compte openweathermap sur http://openweathermap.org/appid et     récupérer votre API Key (onglet ```API Keys```) : https://home.openweathermap.org/api_keys 
     * Exemple de clé (Api Key/appid): 0ada432b59deb9716c357092c5f79be6
-    * Exemple de réponse à l’API: https://api.openweathermap.org/data/2.5/weather?q=Paris&appid=0ada432b59deb9716c357092c5f79be6
+    * Exemple de réponse à l’API: http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=0ada432b59deb9716c357092c5f79be6
 
-    * Analyser la structure de la réponse JSON https://openweathermap.org/current#current_JSON
-    * Documentation sur toute l’API : https://openweathermap.org/current
+    * Analyser la structure de la réponse JSON http://openweathermap.org/current#current_JSON
+    * Documentation sur toute l’API : http://openweathermap.org/current
 
 
 ## 2. Plateforme de dév
@@ -81,7 +81,7 @@ tp5/
     └── main.js // fichier JS où sera le code de votre TP
 ```
 
-* index.html à utiliser (avec les imports de scripts et CSS nécessaires) : https://github.com/bilelz/aw3ir/blob/master/tp5/index.html
+* index.html à utiliser (avec les imports de scripts et CSS nécessaires) : https://github.com/bilelz/tpaw/blob/master/tp5/index.html
 
 
 
@@ -334,7 +334,7 @@ meteo : function (_city){
     this.cityWeatherLoading = true;
 
     // appel AJAX avec fetch
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+_city.name+'&units=metric&lang=fr&apikey=VOTRE_APIKEY')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+_city.name+'&units=metric&lang=fr&apikey=VOTRE_APIKEY')
         .then(function(response) {
             return response.json();
         })
