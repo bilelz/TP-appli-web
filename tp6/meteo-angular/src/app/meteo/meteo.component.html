@@ -34,32 +34,5 @@
 
   <hr/>
 
-<!-- Listing des villes, boucle sur l'array : cityList -->
-<h4>Liste des villes ({{cityList.length}})</h4>
-<ul class="list-group">
-  <li *ngFor="let city of cityList"  class="list-group-item d-flex justify-content-between align-items-center">
-    <a  routerLink="/meteo/{{city.name}}" class="d-block w-100">
-      {{city.name}}    
-    </a>
-    <button (click)="remove(city)" class="btn btn-secondary btn-sm pull-right" title="Supprimer de la liste">&times;</button>
-  </li>
-</ul>
-
-<div class="alert alert-primary" role="alert" *ngIf="cityList.length==0">
-  Aucune ville de saisie!
-</div>
-
-
-<hr/>
-<p>
-  Utilisation du filtrer
-  <strong>json</strong> pour afficher le contenu de la variable
-  <strong>cityList</strong>
-</p>
-<pre>
-{{cityList | json}}
-</pre>
-
-<!-- fin : Listing des villes -->
 
 <hr>
