@@ -16,7 +16,11 @@
             padding-bottom: 5%;
             max-width: 800px;
 
-            /* background-image: url("fond_beau-temps.jpg"); */
+          
+     
+
+     background:   url(climat1.jpg) no-repeat center  ; 
+     background-size:cover;
         }
     </style>
     <!-- CSS boostrap -->
@@ -46,8 +50,10 @@
                 <span class="input-group-btn">
                     <button class="btn btn-primary" type="submit">Go!</button>
                 </span>
+                
             </div>
 
+            
             <!-- affichage de nombre de caractères saisie -->
 
             <small class="text-muted">
@@ -82,11 +88,13 @@
         <div v-if="cityWeatherLoading"> Chargement de la météo...</div>
 
         <div v-if="cityWeather">
+            
 
             <div class="card" style="width: 18rem;" v-if="cityWeather">
                 <div class="card-header">
                     {{cityWeather.name}}
                 </div>
+                
                 <img class="card-img-top"
                     v-bind:src="'https://maps.googleapis.com/maps/api/staticmap?markers='+cityWeather.coord.lat+','+cityWeather.coord.lon+'&zoom=10&size=400x300&scale=2&key=AIzaSyAkmvI9DazzG9p77IShsz_Di7-5Qn7zkcg'"
                     alt="Card image cap">
@@ -101,24 +109,26 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item">
                         <i class="wi wi-cloud"></i> Nuage: {{cityWeather.clouds.all}}%
-                    </li>
+                    
                     <li class="list-group-item">
                         <i class="wi wi-humidity"></i> Humidité: {{cityWeather.main.humidity}}%
-                    </li>
+                    
                     <li class="list-group-item">
                         <i class="wi wi-windy"></i> Vent: {{cityWeather.wind.speed}} km/h
-                    </li>
+                    
                     <li class="list-group-item">
                         <i class="wi wi-sunrise"></i>
                         Levé du soleil:
                         {{new Date(cityWeather.sys.sunrise * 1000).toTimeString()}}
-                    </li>
+                    
                     <li class="list-group-item">
                         <i class="wi wi-sunset"></i>
                         Couché du soleil:
                         {{new Date(cityWeather.sys.sunset * 1000).toTimeString()}}
                     </li>
                 </ul>
+                
+       
             </div>
         </div>
 
@@ -129,26 +139,38 @@
 
     </div>
 
+    <!--debut meteo.region-nord-->
+
+    <div id="MRN16515" style="width:210px;padding:5px;text-align:center;">
+        <a  style="color:blue;text-align:center;font:600 12px arial">meteo paris</a><br>
+        <script type="text/javascript">var MRnV16515="75056"</script>
+        <script src="http://api.region-nord.com/widget/loader-16515.js" async></script>
+        
+            </div>
 
 
 
 
 
 
-    
-
-
-
-
+        
 
 
     <script src="js/main.js"></script>
     <script src="js/libs/bootstrap.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
     <script src="js/libs/vue.js"></script>
+
+    
+
+
+    
+
+
+
 </body>
 
 </html>
 
 
--
+

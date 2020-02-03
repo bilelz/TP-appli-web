@@ -4625,7 +4625,7 @@ tbody.collapse.show {
   }
   .card-group > .card:first-child .card-img-top,
   .card-group > .card:first-child .card-header {
-    border-top-right-radius: 0;
+    border-top-right-radius: 2;
   }
   .card-group > .card:first-child .card-img-bottom,
   .card-group > .card:first-child .card-footer {
