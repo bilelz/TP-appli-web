@@ -1,9 +1,11 @@
-import { Injectable } from '@angular/core';
+
 import { MeteoItem } from '../meteoItem';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+
+
+
+
 export class MeteoService {
 
   constructor() { }
@@ -12,14 +14,14 @@ export class MeteoService {
   getMeteo(name: string): Promise<any> {
     console.log('from service', name);
 
-    // tslint:disable-next-line:prefer-const
     let m = new MeteoItem();
 
-    // tslint:disable-next-line:max-line-length
-    return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=fr&appid=19ccb468d8d4384b3c6ce265ac8a98fc').then(function (response) {
+    return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
+      .then(function (response) {
         return response.json();
       })
       .then(function (json) {
+        console.log(json);
 
         // test du code retour
         // 200 = OK
@@ -33,10 +35,38 @@ export class MeteoService {
             + ' (' + json.message + ')');
 
           return Promise.reject('Météo introuvable pour ' + name
-          + ' (' + json.message + ')');
+            + ' (' + json.message + ')');
         }
 
       });
+    }
 
+    getFiveDaysForecast(name: string): Promise<any>{
+      console.log('forecast from service', name);
+  
+
+      return fetch('https://api.openweathermap.org/data/2.5/forecast?q='+ name +'&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (data) {
+        console.log(data);
+
+        // test du code retour
+        // 200 = OK
+        // 404 = city not found
+        if (data.cod == 200) {
+
+          return Promise.resolve(data);
+        } else {
+       
+          console.error('Forecast introuvable pour ' + name
+            + ' (' + data.message + ')');
+
+          return Promise.reject('forecast introuvable pour ' + name
+            + ' (' + data.message + ')');
+        }
+
+      });
+    }
   }
-}
