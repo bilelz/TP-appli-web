@@ -820,33 +820,33 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony import */
 
 
-    var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
-    /*! @angular/router */
-    "./node_modules/@angular/router/fesm2015/router.js");
-    /* harmony import */
-
-
-    var _app_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
+    var _app_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(
     /*! ./app-routing.module */
     "./src/app/app-routing.module.ts");
     /* harmony import */
 
 
-    var _app_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
+    var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(
     /*! ./app.component */
     "./src/app/app.component.ts");
     /* harmony import */
 
 
-    var _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    var _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(
     /*! ./meteo/meteo.component */
     "./src/app/meteo/meteo.component.ts");
     /* harmony import */
 
 
+    var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(
+    /*! @angular/router */
+    "./node_modules/@angular/router/fesm2015/router.js");
+    /* harmony import */
+
+
     var _meteo_detail_meteo_detail_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(
     /*! ./meteo-detail/meteo-detail.component */
-    "./src/app/meteo-detail/meteo-detail.component.ts"); // <--  Ajouter la référence ici
+    "./src/app/meteo-detail/meteo-detail.component.ts"); //import { ServicesComponent } from './services/services.component';
 
 
     var appRoutes = [{
@@ -858,7 +858,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       pathMatch: 'full'
     }, {
       path: '',
-      component: _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_7__["MeteoComponent"]
+      component: _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_6__["MeteoComponent"]
     }];
 
     var AppModule = function AppModule() {
@@ -866,13 +866,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     };
 
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"], _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_7__["MeteoComponent"], _meteo_detail_meteo_detail_component__WEBPACK_IMPORTED_MODULE_8__["MeteoDetailComponent"]],
-      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_4__["RouterModule"].forRoot(appRoutes, {
+      declarations: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"], _meteo_meteo_component__WEBPACK_IMPORTED_MODULE_6__["MeteoComponent"], _meteo_detail_meteo_detail_component__WEBPACK_IMPORTED_MODULE_8__["MeteoDetailComponent"]],
+      imports: [_angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"].forRoot(appRoutes, {
         enableTracing: true
       } // <-- debugging purposes only
-      ), _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_5__["AppRoutingModule"]],
+      ), _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_4__["AppRoutingModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_router__WEBPACK_IMPORTED_MODULE_7__["RouterModule"]],
       providers: [],
-      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
+      bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
     })], AppModule);
     /***/
   },
