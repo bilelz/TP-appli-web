@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n\n  <!-- menu du haut de page -->\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" routerLink=\"/\"><i class=\"wi wi-thermometer\"></i></a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\"\n      aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" routerLink=\"/\">Accueil\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n  <!-- fin : menu du haut de page -->\n\n  <!--The content below is only a placeholder and can be replaced.-->\n  <div style=\"text-align:center\">\n    <h1>\n      Welcome to {{ title }}!\n    </h1>\n    <!-- <app-meteo></app-meteo> -->\n\n\n\n    <router-outlet></router-outlet>");
+/* harmony default export */ __webpack_exports__["default"] = ("<!--The content below is only a placeholder and can be replaced.-->\n<div class=\"container\">\n\n  <!-- menu du haut de page -->\n  <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n    <a class=\"navbar-brand\" routerLink=\"/\">Météo avec Angular</a>\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item active\">\n          <a class=\"nav-link\" routerLink=\"/\">Accueil\n            <span class=\"sr-only\">(current)</span>\n          </a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n\n  <!-- fin : menu du haut de page -->\n\n<div id=titre>\n  <h1>\n    Welcome to {{ title }}\n  </h1>\n</div>\n<div id=appmeteo>\n  <!--\n  <app-meteo></app-meteo>-->\n  <router-outlet></router-outlet>\n</div>\n\n</div>\n\n\n<!--\n<img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<ul>\n<li>\n<h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2>\n</li>\n<li>\n<h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/cli\">CLI Documentation</a></h2>\n</li>\n<li>\n<h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2>\n</li>\n</ul>\n\n<router-outlet></router-outlet>\n\n-->");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">🏠</li>\n  </ol>\n</nav>\n\n<form (ngSubmit)=\"onSubmit()\">\n  <div class=\"input-group\">\n    <input type=\"search\" placeholder=\"Ville ...\" id=\"name\" name=\"name\" class=\"form-control\" required minlength=\"3\"\n      [(ngModel)]=\"city.name\" #name=\"ngModel\">\n\n    <span class=\"input-group-btn\">\n      <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"!name.valid\">Go!</button>\n    </span>\n  </div>\n  <small *ngIf=\"city.name\" class=\"text-muted\">\n    {{city.name.length}} caractères\n  </small>\n\n  <div *ngIf=\"name.invalid && (name.dirty || name.touched)\" class=\"alert alert-danger\">\n\n    <div *ngIf=\"name.errors.required\">\n      La saisie de la ville est obligatoire\n    </div>\n    <div *ngIf=\"name.errors.minlength\">\n      Doit contenit au moins 3 caratères.\n    </div>\n  </div>\n</form>\n\n<hr/>\n\n<!-- Listing des villes, boucle sur l'array : cityList -->\n<h4>Liste des villes ({{cityList.length}})</h4>\n<ul class=\"list-group\">\n  <li *ngFor=\"let city of cityList\"  class=\"list-group-item d-flex justify-content-between align-items-center\">\n    <a  routerLink=\"/meteo/{{city.name}}\" class=\"d-block w-100\">\n      {{city.name}}    \n    </a>\n    <button (click)=\"remove(city)\" class=\"btn btn-secondary btn-sm pull-right\" title=\"Supprimer de la liste\">&times;</button>\n  </li>\n</ul>\n\n<div class=\"alert alert-primary\" role=\"alert\" *ngIf=\"cityList.length==0\">\n  Aucune ville de saisie!\n</div>\n\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!--app\\meteo\\meteo.component.html-->\n<nav aria-label=\"breadcrumb\">\n  <ol class=\"breadcrumb\">\n    <li class=\"breadcrumb-item active\" aria-current=\"page\">🏠</li>\n  </ol>\n</nav>\n\n <form (ngSubmit)=\"onSubmit()\">\n  <div class=\"input-group\">\n    <input type=\"search\" placeholder=\"Ville ...\" id=\"name\" name=\"name\" \n        class=\"form-control\" required minlength=\"3\"\n        [(ngModel)]=\"city.name\" #name=\"ngModel\">\n\n    <span class=\"input-group-btn\">\n      <button class=\"btn btn-primary\" type=\"submit\" [disabled]=\"!name.valid\">Go!</button>\n    </span>\n  </div>\n  <small *ngIf=\"city.name\" class=\"text-muted\">\n    {{city.name.length}} caractères\n  </small>\n\n  <div *ngIf=\"name.invalid && (name.dirty || name.touched)\" class=\"alert alert-danger\">\n\n    <div *ngIf=\"name.errors.required\">\n      La saisie de la ville est obligatoire\n    </div>\n    <div *ngIf=\"name.errors.minlength\">\n      Doit contenit au moins 3 caratères.\n    </div>\n  </div>\n</form>\n\n<hr/>\n\n<!-- Listing des villes, boucle sur l'array : cityList -->\n<h4>Liste des villes ({{cityList.length}})</h4>\n<ul class=\"list-group\">\n  <li *ngFor=\"let city of cityList\"  class=\"list-group-item d-flex justify-content-between align-items-center\">\n    <a  routerLink=\"/meteo/{{city.name}}\" class=\"d-block w-100\">\n      {{city.name}}    \n    </a>\n    <button (click)=\"remove(city)\" class=\"btn btn-secondary btn-sm pull-right\" title=\"Supprimer de la liste\">&times;</button>\n  </li>\n</ul>\n\n<div class=\"alert alert-primary\" role=\"alert\" *ngIf=\"cityList.length==0\">\n  Aucune ville de saisie!\n</div>\n\n\n<hr/>\n<!--\n<p>\n  Utilisation du filtrer\n  <strong>json</strong> pour afficher le contenu de la variable\n  <strong>cityList</strong>\n</p>\n\n<pre>\n{{cityList | json}}\n</pre>\n-->\n<!-- fin : Listing des villes -->\n\n<hr>");
 
 /***/ }),
 
@@ -330,7 +330,7 @@ AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\r\nh1 {\r\n    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);\r\n    color: white;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-style: italic;\r\n    text-align: center;\r\n    }\r\n  \r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0kseUVBQXlFO0lBQ3pFLFlBQVk7SUFDWix5Q0FBeUM7SUFDekMsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmgxIHtcclxuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxNDFkZWcsICMwZmI4YWQgMCUsICMxZmM4ZGIgNTElLCAjMmNiNWU4IDc1JSk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBcclxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\r\nh1 {\r\n    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);\r\n    color: white;\r\n    font-family: Arial, Helvetica, sans-serif;\r\n    font-style: italic;\r\n    text-align: center;\r\n    }\r\n  \r\n    #appmeteo{\r\n        margin-left: 5%;\r\n        margin-right: 5%;\r\n        margin-top: 5%;\r\n        margin-bottom: 5%;\r\n    }\r\n    \r\n   \r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBO0lBQ0kseUVBQXlFO0lBQ3pFLFlBQVk7SUFDWix5Q0FBeUM7SUFDekMsa0JBQWtCO0lBQ2xCLGtCQUFrQjtJQUNsQjs7SUFFQTtRQUNJLGVBQWU7UUFDZixnQkFBZ0I7UUFDaEIsY0FBYztRQUNkLGlCQUFpQjtJQUNyQiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbmgxIHtcclxuICAgIGJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCgxNDFkZWcsICMwZmI4YWQgMCUsICMxZmM4ZGIgNTElLCAjMmNiNWU4IDc1JSk7XHJcbiAgICBjb2xvcjogd2hpdGU7XHJcbiAgICBmb250LWZhbWlseTogQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtc3R5bGU6IGl0YWxpYztcclxuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcclxuICAgIH1cclxuICBcclxuICAgICNhcHBtZXRlb3tcclxuICAgICAgICBtYXJnaW4tbGVmdDogNSU7XHJcbiAgICAgICAgbWFyZ2luLXJpZ2h0OiA1JTtcclxuICAgICAgICBtYXJnaW4tdG9wOiA1JTtcclxuICAgICAgICBtYXJnaW4tYm90dG9tOiA1JTtcclxuICAgIH1cclxuICAgIFxyXG4gICAiXX0= */");
 
 /***/ }),
 
@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let AppComponent = class AppComponent {
     constructor() {
-        this.title = '⛅ Weather webapp @Master 3ir²';
+        this.title = '⛅ Weather webapp by Angular ';
     }
 };
 AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -561,13 +561,13 @@ let MeteoComponent = class MeteoComponent {
     }
     remove(_city) {
         // on utilise 'filter' pour retourne une liste avec tous les items ayant un nom différent de _city.name
-        this.cityList = this.cityList.filter((item) => item.name !== _city.name);
+        this.cityList = this.cityList.filter(item => item.name != _city.name);
         this.saveCityList();
     }
     isCityExist(_cityName) {
         // la méthode 'filter' retourne une liste contenant tous les items ayant un nom égale à _cityName
         // doc. sur filter : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
-        if (this.cityList.filter(item => item.name.toUpperCase() === _cityName.toUpperCase()).length > 0) {
+        if (this.cityList.filter(item => item.name.toUpperCase() == _cityName.toUpperCase()).length > 0) {
             return true;
         }
         else {
@@ -620,23 +620,31 @@ class MeteoItem {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MeteoService", function() { return MeteoService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _meteoItem__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../meteoItem */ "./src/app/meteoItem.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _meteoItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../meteoItem */ "./src/app/meteoItem.ts");
 
 
-class MeteoService {
+
+//import { Observable } from 'rxjs/Observable';
+//import { of } from 'rxjs/observable/of';
+/*
+@Injectable({
+  providedIn: 'root'
+})
+*/
+let MeteoService = class MeteoService {
     constructor() { }
     getMeteo(name) {
         console.log('from service', name);
-        let m = new _meteoItem__WEBPACK_IMPORTED_MODULE_1__["MeteoItem"]();
-        return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
+        let m = new _meteoItem__WEBPACK_IMPORTED_MODULE_2__["MeteoItem"]();
+        return fetch('https://demo.bilelz.fr/owmap/?q=' + name + '&units=metric&lang=fr&appid=ad6c3f76aa016ba417579de2f72afbe1')
             .then(function (response) {
             return response.json();
         })
             .then(function (json) {
-            console.log(json);
             // test du code retour
             // 200 = OK
-            // 404 = city not found
+            // 404 = city not found 
             if (json.cod === 200) {
                 return Promise.resolve(json);
             }
@@ -649,29 +657,11 @@ class MeteoService {
             }
         });
     }
-    getFiveDaysForecast(name) {
-        console.log('forecast from service', name);
-        return fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + name + '&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
-            .then(function (response) {
-            return response.json();
-        })
-            .then(function (data) {
-            console.log(data);
-            // test du code retour
-            // 200 = OK
-            // 404 = city not found
-            if (data.cod == 200) {
-                return Promise.resolve(data);
-            }
-            else {
-                console.error('Forecast introuvable pour ' + name
-                    + ' (' + data.message + ')');
-                return Promise.reject('forecast introuvable pour ' + name
-                    + ' (' + data.message + ')');
-            }
-        });
-    }
-}
+};
+MeteoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' })
+], MeteoService);
+
 
 
 /***/ }),

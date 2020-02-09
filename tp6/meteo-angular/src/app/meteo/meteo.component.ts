@@ -4,24 +4,22 @@ import { MeteoItem } from '../meteoItem';
 @Component({
   selector: 'app-meteo',
   templateUrl: './meteo.component.html',
-  styleUrls: ['./meteo.component.css']
+  styleUrls: ['./meteo.component.css'],
+ 
 })
 export class MeteoComponent implements OnInit {
-
   city: MeteoItem = {
     name: '',
     id: null,
     weather: null
   };
-
   cityList: any;
-
   constructor() { }
 
   ngOnInit() {
-    if ( localStorage.cityList !== undefined) {
+    if( localStorage.cityList !== undefined){
       this.cityList = JSON.parse(localStorage.cityList);
-    } else {
+    }else{
       this.cityList = [];
     }
   }
@@ -36,16 +34,16 @@ export class MeteoComponent implements OnInit {
       this.saveCityList();
 
       console.log(this.city.name, 'ajouté à la dans la liste');
-    } else {
+    }else{
       console.log(this.city.name, 'existe déjà dans la liste');
     }
 
   }
 
-  remove(_city: { name: any; }) {
+  remove(_city) {
     // on utilise 'filter' pour retourne une liste avec tous les items ayant un nom différent de _city.name
-    this.cityList = this.cityList.filter((item: { name: any; }) =>
-      item.name !== _city.name
+    this.cityList = this.cityList.filter(item =>
+      item.name != _city.name
     );
     this.saveCityList();
   }
@@ -55,7 +53,7 @@ export class MeteoComponent implements OnInit {
     // la méthode 'filter' retourne une liste contenant tous les items ayant un nom égale à _cityName
     // doc. sur filter : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/filter
     if (this.cityList.filter(item =>
-      item.name.toUpperCase() === _cityName.toUpperCase()
+      item.name.toUpperCase() == _cityName.toUpperCase()
     ).length > 0) {
       return true;
     } else {
@@ -63,8 +61,11 @@ export class MeteoComponent implements OnInit {
     }
   }
 
-  saveCityList() {
+  saveCityList(){
     localStorage.cityList = JSON.stringify(this.cityList);
   }
+  
+  
 
 }
+

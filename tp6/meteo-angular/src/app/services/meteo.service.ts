@@ -1,11 +1,13 @@
-
+import { Injectable } from '@angular/core';
 import { MeteoItem } from '../meteoItem';
-
-
-
-
-
-
+//import { Observable } from 'rxjs/Observable';
+//import { of } from 'rxjs/observable/of';
+/*
+@Injectable({
+  providedIn: 'root'
+})
+*/
+@Injectable({ providedIn: 'root' })
 export class MeteoService {
 
   constructor() { }
@@ -16,16 +18,15 @@ export class MeteoService {
 
     let m = new MeteoItem();
 
-    return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + name + '&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
+    return fetch('https://demo.bilelz.fr/owmap/?q=' + name + '&units=metric&lang=fr&appid=ad6c3f76aa016ba417579de2f72afbe1')
       .then(function (response) {
         return response.json();
       })
       .then(function (json) {
-        console.log(json);
 
         // test du code retour
         // 200 = OK
-        // 404 = city not found
+        // 404 = city not found 
         if (json.cod === 200) {
           return Promise.resolve(json);
         } else {
@@ -35,38 +36,10 @@ export class MeteoService {
             + ' (' + json.message + ')');
 
           return Promise.reject('Météo introuvable pour ' + name
-            + ' (' + json.message + ')');
+          + ' (' + json.message + ')');
         }
 
       });
-    }
 
-    getFiveDaysForecast(name: string): Promise<any>{
-      console.log('forecast from service', name);
-  
-
-      return fetch('https://api.openweathermap.org/data/2.5/forecast?q='+ name +'&units=metric&lang=fr&appid=8e21ca097f8593edf70ddc460b4b3840')
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-
-        // test du code retour
-        // 200 = OK
-        // 404 = city not found
-        if (data.cod == 200) {
-
-          return Promise.resolve(data);
-        } else {
-       
-          console.error('Forecast introuvable pour ' + name
-            + ' (' + data.message + ')');
-
-          return Promise.reject('forecast introuvable pour ' + name
-            + ' (' + data.message + ')');
-        }
-
-      });
-    }
   }
+}

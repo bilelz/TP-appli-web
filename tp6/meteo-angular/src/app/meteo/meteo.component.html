@@ -1,13 +1,15 @@
+<!--app\meteo\meteo.component.html-->
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
     <li class="breadcrumb-item active" aria-current="page">🏠</li>
   </ol>
 </nav>
 
-<form (ngSubmit)="onSubmit()">
+ <form (ngSubmit)="onSubmit()">
   <div class="input-group">
-    <input type="search" placeholder="Ville ..." id="name" name="name" class="form-control" required minlength="3"
-      [(ngModel)]="city.name" #name="ngModel">
+    <input type="search" placeholder="Ville ..." id="name" name="name" 
+        class="form-control" required minlength="3"
+        [(ngModel)]="city.name" #name="ngModel">
 
     <span class="input-group-btn">
       <button class="btn btn-primary" type="submit" [disabled]="!name.valid">Go!</button>
@@ -46,3 +48,18 @@
 </div>
 
 
+<hr/>
+<!--
+<p>
+  Utilisation du filtrer
+  <strong>json</strong> pour afficher le contenu de la variable
+  <strong>cityList</strong>
+</p>
+
+<pre>
+{{cityList | json}}
+</pre>
+-->
+<!-- fin : Listing des villes -->
+
+<hr>
