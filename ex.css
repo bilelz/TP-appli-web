@@ -2,19 +2,57 @@
  body
  {
 
-    background-color:rgb(175, 175, 175);              
+    background-color:rgb(63, 247, 72);              
     font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
     font-size: 16px;
     margin: 0 auto;
-      width: 700px;
+      width: 800px;
 
  
 
-
+      color: rgb(136, 241, 241);
+      font-weight: bold;
+      
+      
+      }
+      
+       h1
+       {
+      padding-left: 190px;
+      color: rgb(224, 255, 240);
+       }
+      
+      
+      
+       li:hover
+      {
+      
+      
+          background-color: rgb(137, 255, 210);
+      
+           border: 1px ;
+              border-radius: 5px;
+              font-size: 1em;
+              text-align: center; 
   
    
 
  }
+
+
+ 
+ ul{
+     
+ 
+  padding-left: 180PX;
+  padding-top: 15px;
+  padding-bottom: 15px;
+background:rgb(255, 255, 255) ;
+border-radius: 30px;
+background: rgba(226, 226, 226, 0.548);
+
+
+}
 
 
   @media only screen {
@@ -38,3 +76,12 @@
    
   }
  }
+
+ #photo{
+  border-radius: 20% ;
+  height: 200px;
+  margin-bottom:2%;
+  width: 200px;
+
+}
+  
