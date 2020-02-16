@@ -10,7 +10,7 @@
 
  
 
-      color: rgb(136, 241, 241);
+      color: rgb(10, 10, 10);
       font-weight: bold;
       
 
@@ -19,26 +19,33 @@
       
       }
       
-       h1
+       h2
        {
-      padding-left: 190px;
-      color: rgb(224, 255, 240);
+  
+      color: rgb(241, 110, 77);
       text-align: center;
-       }
-      
-      
-       p{
 
-        padding-left: 190px;
-        color: rgb(224, 255, 240);
-        
+      border: 1px solid rgb(245, 54, 40);
+            
+      box-shadow: 6px 6px 0px rgb(224, 163, 123);
+    
+  padding-top: 5px;
+  padding-bottom: 5px;
+background:rgb(255, 255, 255) ;
+border-radius: 30px;
+background: rgba(226, 226, 226, 0.548);
+  
        }
+
+      
+      
+  
       
        li:hover
       {
       
       
-          background-color: rgb(137, 255, 210);
+          background-color: rgb(103, 237, 255);
       
            border: 1px ;
               border-radius: 5px;
@@ -51,6 +58,8 @@
               box-shadow: 6px 6px 0px rgb(224, 163, 123);
           
            
+              
+   
 
  }
 
@@ -59,12 +68,12 @@
  li{
      
  
-  padding-left: 80PX;
+  padding-left: 40PX;
   padding-top: 10px;
   padding-bottom: 10px;
-background:rgb(255, 255, 255) ;
+
 border-radius: 30px;
-background: rgba(226, 226, 226, 0.548);
+background: rgba(254, 255, 255, 0.548);
 
 
 
@@ -99,8 +108,10 @@ background: rgba(226, 226, 226, 0.548);
  #photo{
   border-radius: 20% ;
   height: 100px;
-  margin-bottom:2%;
-  width: 100px;
+  margin-bottom:0%;
+  width: 200px;
+
+
 
 }
   
