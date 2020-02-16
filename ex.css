@@ -13,6 +13,9 @@
       color: rgb(136, 241, 241);
       font-weight: bold;
       
+
+  
+
       
       }
       
@@ -20,9 +23,16 @@
        {
       padding-left: 190px;
       color: rgb(224, 255, 240);
+      text-align: center;
        }
       
       
+       p{
+
+        padding-left: 190px;
+        color: rgb(224, 255, 240);
+        
+       }
       
        li:hover
       {
@@ -34,25 +44,34 @@
               border-radius: 5px;
               font-size: 1em;
               text-align: center; 
+              
   
-   
+              border: 1px solid rgb(245, 54, 40);
+            
+              box-shadow: 6px 6px 0px rgb(224, 163, 123);
+          
+           
 
  }
 
 
  
- ul{
+ li{
      
  
-  padding-left: 180PX;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-left: 80PX;
+  padding-top: 10px;
+  padding-bottom: 10px;
 background:rgb(255, 255, 255) ;
 border-radius: 30px;
 background: rgba(226, 226, 226, 0.548);
 
 
+
 }
+
+
+
 
 
   @media only screen {
@@ -79,9 +98,9 @@ background: rgba(226, 226, 226, 0.548);
 
  #photo{
   border-radius: 20% ;
-  height: 200px;
+  height: 100px;
   margin-bottom:2%;
-  width: 200px;
+  width: 100px;
 
 }
   
