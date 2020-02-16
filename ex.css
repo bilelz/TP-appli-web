@@ -19,7 +19,7 @@
       
       }
       
-       h2
+       h1
        {
   
       color: rgb(241, 110, 77);
@@ -106,8 +106,10 @@ background: rgba(254, 255, 255, 0.548);
  }
 
  #photo{
-  border-radius: 20% ;
+  border-radius: 10% ;
+  border-left-style: inset;
   height: 100px;
+
   margin-bottom:0%;
   width: 200px;
 
