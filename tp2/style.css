@@ -1,10 +1,40 @@
-label {
-    display:block ;
-    float:left;
-    width:100px ;
-     < div id="error" style="background-color: pink; padding: 5px; border: 1px; border-color: black; display: none;" > 
-    <p>Nom doit contenir au moins 5 catacteres</p>
-</div>
-<div id="resultat" style="background-color: green; padding: 5px; color: white;display: none;">
-   
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+form{
+
+display:block;
+margin-top: ; border:2px solid gray;
+border-radius:10px;
+box-sizing:border-box;
+padding:15px;
+width:600px;
+margin:auto;
+}
+
+p{ padding-left: 200px;
+background-color: rgb(93, 14, 158);}
+
+
+#error{
+    background-color:rgb(151, 179, 26);
+    padding: 5px;
+    border: 1px solid black;
+    display: none;
+
+}
+
+#resultat{
+    background-color:rgb(0, 128, 100);
+    padding: 5px;
+    color: white;
+    display:none; 
+}
+
+.display{
+
+    display: block !important;
+
 }
