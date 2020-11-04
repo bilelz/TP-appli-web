@@ -9,6 +9,9 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel ="stylesheet"   href="style.css"  >
+        
+        <script type="text/javascript" src="formulaire.js"></script>
 
         <style>
           body{
@@ -26,6 +29,32 @@
     </head>
     <body>        
         <h1>tp2</h1>
+        <h2>Saisi d'une fiche "Personne"</h2>
+        <form action="/ma-page-de-traitement" method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" minlength="5" maxlength="20"><br><br>
+            </div>
+            <div>
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" name="user_prenome" minlength="5" maxlength="20"><br><br>
+            </div>
+            <label for="naissance"> Date de naissance</label>
+                <input id=naisssance naissance="nom" type="txt" placeholder="JJ/MM/AAAA"> <br><br>
+            <div>
+                <label for="Adresse">Adresse</label>
+                <input  name ="Adresse" type="txt"   minlength="5" maxlength="50"  > <br><br>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input  name ="mail" type="email"   minlength="5" maxlength="50"  > <br><br>
+               
+                <input type="submit" value="valider" >
+       
+         </form>
+            </div>
+           
+        </form>
         <!-- Add your site or application content here -->
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
