@@ -3,12 +3,15 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>TP1</title>
+        <title>TP2</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel ="stylesheet"   href="style.css"  >
+        
+        <script type="text/javascript" src="formulaire.js"></script>
 
         <style>
           body{
@@ -22,138 +25,37 @@
         
         <!-- Code à dé-commenter si besoin de fichier CSS ou JS -->
         <!--<link rel="stylesheet" href="style.css">-->
-        <!--<script src="main.js"></script>-->
+        <!--<script src="js/main.js"></script>-->
     </head>
     <body>        
-        <h1>TP1 </h1>
+        <h1>tp2</h1>
+        <h2>Saisi d'une fiche "Personne"</h2>
+        <form action="/ma-page-de-traitement" method="post">
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name" minlength="5" maxlength="20"><br><br>
+            </div>
+            <div>
+                <label for="prenom">Prenom :</label>
+                <input type="text" id="prenom" name="user_prenome" minlength="5" maxlength="20"><br><br>
+            </div>
+            <label for="naissance"> Date de naissance</label>
+                <input id=naisssance naissance="nom" type="txt" placeholder="JJ/MM/AAAA"> <br><br>
+            <div>
+                <label for="Adresse">Adresse</label>
+                <input  name ="Adresse" type="txt"   minlength="5" maxlength="50"  > <br><br>
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <input  name ="mail" type="email"   minlength="5" maxlength="50"  > <br><br>
+               
+                <input type="submit" value="valider" >
+       
+         </form>
+            </div>
+           
+        </form>
         <!-- Add your site or application content here -->
-            
-        <table border="2" cellpadding="5" width="99%">
-            <tr>
-            <td colspan="2">DIOUF Saliou</td>
-            <td>Celibataire</td>
-            
-            </tr>
-            <tr>
-            <td colspan="2">91 Villetaneuse</td>
-            <td>Permis B</td>
-            
-            </tr>
-            <tr>
-            <td colspan="2">06 06 06 06 06</td>
-            <td></td>
-            
-            </tr>
-            <tr>
-            <td colspan="2"><a href="">salioudiouf451@gmail.com</a></td>
-            <td></td>
-            
-            </tr>
-            
-            </table>
-            
-            <div class="text">
-            <h1> Ingénieur d'étude et développement</h1>
-            </div>
-            <div>
-            <h1>Formations</h1>
-            </div>
-            
-            <table border="2" cellpadding="5" width="99%">
-            <tr>
-            <td>2016</td>
-            <td colspan="1"><a href="">Master 3IR</a> à l'Universite Paris XIII </td>
-            
-            </tr>
-            <tr>
-            <td>2014</td>
-            <td colspan="1"><a href="">License Telecom</a> à l'Universite Paris XIII</td>
-            
-            </tr>
-            <tr>
-            <td>2011</td>
-            <td colspan="1">Bac S</td>
-            
-            </tr>
-            
-            </table>
-            
-            <div>
-            <h1>Compétences</h1>
-            </div>
-            
-            <table border="2" cellpadding="5" width="99%">
-            <tr>
-            <td>Developpement</td>
-            <td colspan="2">JAVA 7, HTML</td>
-            
-            </tr>
-            <tr>
-            <td >Base de donnees </td>
-            <td colspan="2">MySQL, PostgreSQL</td>
-            
-            </tr>
-            <tr>
-            <td>Reseaux</td>
-            <td colspan="2">IPV6, LAN, WIFI</td>
-            
-            </tr>
-            <tr>
-            <td>Langues</td>
-            <td colspan="2">Anglais : bilingue, Français: Langue maternelle </td>
-            
-            </tr>
-            
-            </table>
-            
-            <div>
-            <h1>Expérience</h1>
-            </div>
-            
-            <table border="2" cellpadding="5" width="99%">
-            <tr>
-            <td >2016</td>
-            <td colspan="2">Stage de fin d'etude chez <img src="orange.png"  width="10%"></td>
-            
-            </tr>
-            <tr>
-            <td>2014</td>
-            <td colspan="2">Stage chez<img src="edf.jpg" width="10%"></td>
-            
-            </tr>
-            <tr>
-            <td>2011</td>
-            <td colspan="2">Bac S</td>
-            
-            </tr>
-            
-            
-            </table>
-            
-            
-            <div>
-            <h1>Centre d'intérêt</h1>
-            </div>
-            <table border="2" cellpadding="5" width="99%">
-            <tr>
-            <td>Sport</td>
-            <td colspan="2">Running, Volley-ball</td>
-            
-            </tr>
-            <tr>
-            <td >Culture </td>
-            <td colspan="2">Cinema, Musee</td>
-            
-            </tr>
-            <tr>
-            <td>Voyages</td>
-            <td colspan="2">Angleterre, Espagne</td>
-            
-            
-            
-            </table>
-
-
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
     </body>
