@@ -11,12 +11,11 @@ function validation(){
       document.getElementById("resultat").classList.remove("display")
     
     } else if(item.value.length < 5){
-      // recuperation du label
+      
       var label =   document.querySelector("label[for="+item.id+"]").textContent;
-      // ajout du message d'erreur
+     
       document.getElementById("error").innerHTML += `Minimum 5 caractères pour : ${label} <br/>`;
       
-      // ajout de la classe CSS "display"
       document.getElementById("error").classList.add("display");
         document.getElementById("resultat").classList.remove("display")
   

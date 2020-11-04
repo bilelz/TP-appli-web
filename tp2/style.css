@@ -15,7 +15,7 @@ margin:auto;
 }
 
 p{ padding-left: 200px;
-background-color: rgb(93, 14, 158);}
+background-color: rgb(14, 148, 158);}
 
 
 #error{
@@ -27,7 +27,7 @@ background-color: rgb(93, 14, 158);}
 }
 
 #resultat{
-    background-color:rgb(0, 128, 100);
+    background-color:rgb(0, 128, 6);
     padding: 5px;
     color: white;
     display:none; 
