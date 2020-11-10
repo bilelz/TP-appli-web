@@ -19,7 +19,7 @@ function validation(){
       document.getElementById("error").classList.add("display");
         document.getElementById("resultat").classList.remove("display")
   
-  }
+    }
   }
   
     if(document.getElementById("error").innerHTML == ""){
