@@ -1,0 +1,40 @@
+label{
+    width: 200px;
+    display: inline-block;
+}
+
+form{
+
+display:block;
+margin-top: ; border:2px solid gray;
+border-radius:10px;
+box-sizing:border-box;
+padding:15px;
+width:600px;
+margin:auto;
+}
+
+p{ padding-left: 200px;
+background-color: rgb(14, 148, 158);}
+
+
+#error{
+    background-color:rgb(151, 179, 26);
+    padding: 5px;
+    border: 1px solid black;
+    display: none;
+
+}
+
+#resultat{
+    background-color:rgb(0, 128, 6);
+    padding: 5px;
+    color: white;
+    display:none; 
+}
+
+.display{
+
+    display: block !important;
+
+}
