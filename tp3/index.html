@@ -7,6 +7,19 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+       <!-- jquery pour pouvoir utiliser les composants JS de boostap (modal, tooltip...) -->
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+
+<!-- CSS boostrap -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/popper.min.js"></script>
+
+<!-- composants JS de boostrap (modal http://getbootstrap.com/docs/4.0/components/modal/ , collapse...) -->
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/form-jquery-validation.js"></script>
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -24,10 +37,83 @@
         <!--<link rel="stylesheet" href="style.css">-->
         <!--<script src="main.js"></script>-->
     </head>
-    <body>        
-        <h1>tp3</h1>
-        <!-- Add your site or application content here -->
+    <body>  
+        
+          <div class="container"  style="margin: 2 auto;
+        
+          width: 800px;
+          height: 40%;
+        
+          padding: 1em;
+          border: 1px dotted #33332c ;
+          
+          background-color:rgb(189, 228, 243);" > 
+    <form class="form-group-inline">   
+        <h1 style="text-align: center;">TP3 avec jquery & bootstrap</h1>
+
+        <div class="form-group row">
+            <label for="prenom" class="col-sm-2 col-form-label">Prenom</label>
+            <div class="col-sm-10">
+            <input type="text"  class="form-control" id="prenom" placeholder="Ex: Pierre">  <br/>
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="nom" class="col-sm-2 col-form-label">Nom</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="nom" placeholder="Ex: Giraud">  <br/>
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="date" class="col-sm-2 col-form-label">Date de naissance</label>
+            <div class="col-sm-10">
+            <input type="date" class="form-control" id="date" placeholder="ex: JJ/MM/AAAA">  <br/>
+          </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="adresse" class="col-sm-2 col-form-label">Adresse</label>
+            <div class="col-sm-10">
+            <input type="text" class="form-control" id="adresse">  <br/>
+          </div>
+        </div>
+
+          <div class="form-group row">
+            <label for="mail" class="col-sm-2 col-form-label">Email:</label>
+            <div class="col-sm-10">
+            <input type="email" class="form-control" id="mail" placeholder="aaa@" name="mail" required>
+          </div>
+        </div>
+
+          <input type="button" value="Valider" id="valider" class="btn btn-primary">     
+          
+          <!-- Add your site or application content here -->
+            <!-- Content here -->
+        </form>
+        </div>
+   
         <p>Hello world! This is HTML5 Boilerplate.</p>
         <img src="../galilee.png" alt="Logo Galilee"/>
+
+        <div class="modal" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Corps de la modal à modifier après validation du formulaire</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
